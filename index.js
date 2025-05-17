@@ -10,8 +10,8 @@ const roll = (x) => {
     */
    let output = [];
    for(let i = 0; i < x; i++) {
-        const rarity = access.RNG(3, 6);
-        output.push(access.browse("./ops", rarity));
+        let rarity = access.RNG(3, 6);
+        output.push(access.browse("./ops", `${rarity}`));
     }
     return output;
 }
