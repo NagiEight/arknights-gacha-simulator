@@ -28,7 +28,7 @@ const displayOp = (opList) => {
             justify-content: center;
         ">
             <p>${op.name}</p>
-            <img src="${op.image}" alt="${op.name}">
+            <img src="${op.img}" alt="${op.name}">
         </div>`
     });
 }
