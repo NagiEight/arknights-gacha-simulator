@@ -3,7 +3,7 @@ const path = require("path");
 
 const browse = async(folder, rarity) => {
     /*
-    Randomizer for the gacha system. Choose from a rariry of 3 to 6, and randomly select an operators from said rarity and return their JSON info.
+    Randomizer for the gacha system. Choose from a rariry of 3 to 6, and randomly select an operators from that rarity and return their JSON info.
     */
     try {
         const fullPath = path.join(folder, `${rarity}`)

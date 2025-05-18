@@ -31,7 +31,7 @@ const displayOp = (opList) => {
             <img src="${op.image}" alt="${op.name}">
         </div>`
     });
-} 
+}
 
 rollButton.addEventListener("click", () => {
     displayOp(roll(10));
