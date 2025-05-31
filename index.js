@@ -72,8 +72,13 @@ rollButton.addEventListener("click", () => {
             flex-direction: column;
             justify-content: center;
         ">
+<<<<<<< HEAD
             <p>${result[i].name}</p>
             <img src="${result[i].img}" alt="${result[i].name}">
+=======
+            <p>${op.name}</p>
+            <img src="${op.img}" alt="${op.name}">
+>>>>>>> 7dfbfecd6199522108a99f07ac7cbd8d60cac4c1
         </div>`
     }
     result = []
@@ -81,6 +86,7 @@ rollButton.addEventListener("click", () => {
 });
 
 singleRollButton.addEventListener("click", () => {
+<<<<<<< HEAD
     rollButton.disabled = true;
     rollCount += 1;
 
@@ -108,3 +114,7 @@ singleRollButton.addEventListener("click", () => {
     result = []
     rollButton.disabled = false;
 });
+=======
+    displayOp(roll(1));
+});
+>>>>>>> 7dfbfecd6199522108a99f07ac7cbd8d60cac4c1
