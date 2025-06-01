@@ -89,8 +89,8 @@ rollButton.addEventListener("click", () => {
                 rollCount = 0;
                 rarities = JSON.parse(JSON.stringify(baseRarities));
 
-                if(isRateUp === 0) {
-                    const isHardRateUp = Math.floor(Math.random() * 2);
+                if(isRateUp === 1) {
+                    const isHardRateUp = access.RNG(1);
                     if(isHardRateUp === 1) {
                         result.push(currentBanner["hard6*RateUp"][access.RNG(hard6RateUp)]);
                     }
@@ -99,10 +99,6 @@ rollButton.addEventListener("click", () => {
                     }
                     continue;
                 }
-            }
-            else if(rarity === "5" && isRateUp === 1){
-                result.push(currentBanner["5*RateUp"][access.RNG(fiveRateUp)]);
-                continue;
             }
         }
         else if(currentBanner.type === "TrueLimited" && totalRollsCount === 120) {
@@ -125,6 +121,7 @@ rollButton.addEventListener("click", () => {
         }
         result.push(currentBanner["stdRoster"][`${rarity}*`][access.RNG(currentBanner["stdRoster"][`${rarity}*`].length)]);
     }
+
     result.forEach(ops => {
         opDisplay.innerHTML += `<div style="
     display: flex;
@@ -171,7 +168,7 @@ singleRollButton.addEventListener("click", () => {
                 rollCount = 0;
                 rarities = JSON.parse(JSON.stringify(baseRarities));
 
-                if(isRateUp === 0) {
+                if(isRateUp === 1) {
                     const isHardRateUp = Math.floor(Math.random() * 2);
                     if(isHardRateUp === 1) {
                         result.push(currentBanner["hard6*RateUp"][access.RNG(hard6RateUp)]);
@@ -182,7 +179,7 @@ singleRollButton.addEventListener("click", () => {
                     continue;
                 }
             }
-            else if(rarity === "5" && isRateUp === 1){
+            else if(rarity === "5" && isRateUp === 1) {
                 result.push(currentBanner["5*RateUp"][access.RNG(fiveRateUp)]);
                 continue;
             }
@@ -207,6 +204,7 @@ singleRollButton.addEventListener("click", () => {
         }
         result.push(currentBanner["stdRoster"][`${rarity}*`][access.RNG(currentBanner["stdRoster"][`${rarity}*`].length)]);
     }
+
     result.forEach(ops => {
         opDisplay.innerHTML += `<div style="
     display: flex;
