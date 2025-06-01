@@ -77,7 +77,7 @@ rollButton.addEventListener("click", () => {
         }
 
         rarity = access.gacha(rarities);
-        const isRateUp = Math.floor(Math.random() * 2);
+        const isRateUp = access.RNG(1);
 
         if(currentBanner.type === "Limited") {
             if(totalRollsCount === 300) {
@@ -100,51 +100,28 @@ rollButton.addEventListener("click", () => {
                     continue;
                 }
             }
-            else if(rarity === "5"){
-                if(isRateUp === 0) {
-                    result.push(currentBanner["5*RateUp"][access.RNG(fiveRateUp)]);
-                    continue;
-                }
+            else if(rarity === "5" && isRateUp === 1){
+                result.push(currentBanner["5*RateUp"][access.RNG(fiveRateUp)]);
+                continue;
             }
         }
-        else if(currentBanner.type === "TrueLimited") {
-            if(totalRollsCount === 120) {
+        else if(currentBanner.type === "TrueLimited" && totalRollsCount === 120) {
+            result.push(currentBanner["hard6*RateUp"][access.RNG(hard6RateUp)]);
+            continue;
+        }
+        
+        if(rarity === "6") {
+            rollCount = 0;
+            rarities = JSON.parse(JSON.stringify(baseRarities));
+
+            if(isRateUp === 1) {
                 result.push(currentBanner["hard6*RateUp"][access.RNG(hard6RateUp)]);
                 continue;
             }
-
-            if(rarity === "6") {
-                rollCount = 0;
-                rarities = JSON.parse(JSON.stringify(baseRarities));
-
-                if(isRateUp === 1) {
-                    result.push(currentBanner["hard6*RateUp"][access.RNG(hard6RateUp)]);
-                    continue;
-                }
-            }
-            else if(rarity === "5") {
-                if(isRateUp === 1) {
-                    result.push(currentBanner["5*RateUp"][access.RNG(fiveRateUp)]);
-                    continue;
-                }
-            }
         }
-        else {
-            if(rarity === "6") {
-                rollCount = 0;
-                rarities = JSON.parse(JSON.stringify(baseRarities));
-
-                if(isRateUp === 1) {
-                    result.push(currentBanner["hard6*RateUp"][access.RNG(hard6RateUp)]);
-                    continue;
-                }
-            }
-            else if(rarity === "5") {
-                if(isRateUp === 1) {
-                    result.push(currentBanner["5*RateUp"][access.RNG(fiveRateUp)]);
-                    continue;
-                }
-            }
+        else if(rarity === "5" && isRateUp === 1) {
+            result.push(currentBanner["5*RateUp"][access.RNG(fiveRateUp)]);
+            continue;
         }
         result.push(currentBanner["stdRoster"][`${rarity}*`][access.RNG(currentBanner["stdRoster"][`${rarity}*`].length)]);
     }
@@ -159,6 +136,7 @@ rollButton.addEventListener("click", () => {
     <p>${ops.name}</p>
 </div>`
     });
+    result = [];
     rollButton.disabled = false;
 });
 
@@ -181,7 +159,7 @@ singleRollButton.addEventListener("click", () => {
         }
 
         rarity = access.gacha(rarities);
-        const isRateUp = Math.floor(Math.random() * 2);
+        const isRateUp = access.RNG(1);
 
         if(currentBanner.type === "Limited") {
             if(totalRollsCount === 300) {
@@ -204,51 +182,28 @@ singleRollButton.addEventListener("click", () => {
                     continue;
                 }
             }
-            else if(rarity === "5"){
-                if(isRateUp === 0) {
-                    result.push(currentBanner["5*RateUp"][access.RNG(fiveRateUp)]);
-                    continue;
-                }
+            else if(rarity === "5" && isRateUp === 1){
+                result.push(currentBanner["5*RateUp"][access.RNG(fiveRateUp)]);
+                continue;
             }
         }
-        else if(currentBanner.type === "TrueLimited") {
-            if(totalRollsCount === 120) {
+        else if(currentBanner.type === "TrueLimited" && totalRollsCount === 120) {
+            result.push(currentBanner["hard6*RateUp"][access.RNG(hard6RateUp)]);
+            continue;
+        }
+        
+        if(rarity === "6") {
+            rollCount = 0;
+            rarities = JSON.parse(JSON.stringify(baseRarities));
+
+            if(isRateUp === 1) {
                 result.push(currentBanner["hard6*RateUp"][access.RNG(hard6RateUp)]);
                 continue;
             }
-
-            if(rarity === "6") {
-                rollCount = 0;
-                rarities = JSON.parse(JSON.stringify(baseRarities));
-
-                if(isRateUp === 1) {
-                    result.push(currentBanner["hard6*RateUp"][access.RNG(hard6RateUp)]);
-                    continue;
-                }
-            }
-            else if(rarity === "5") {
-                if(isRateUp === 1) {
-                    result.push(currentBanner["5*RateUp"][access.RNG(fiveRateUp)]);
-                    continue;
-                }
-            }
         }
-        else {
-            if(rarity === "6") {
-                rollCount = 0;
-                rarities = JSON.parse(JSON.stringify(baseRarities));
-
-                if(isRateUp === 1) {
-                    result.push(currentBanner["hard6*RateUp"][access.RNG(hard6RateUp)]);
-                    continue;
-                }
-            }
-            else if(rarity === "5") {
-                if(isRateUp === 1) {
-                    result.push(currentBanner["5*RateUp"][access.RNG(fiveRateUp)]);
-                    continue;
-                }
-            }
+        else if(rarity === "5" && isRateUp === 1) {
+            result.push(currentBanner["5*RateUp"][access.RNG(fiveRateUp)]);
+            continue;
         }
         result.push(currentBanner["stdRoster"][`${rarity}*`][access.RNG(currentBanner["stdRoster"][`${rarity}*`].length)]);
     }
@@ -263,5 +218,6 @@ singleRollButton.addEventListener("click", () => {
     <p>${ops.name}</p>
 </div>`
     });
+    result = []
     rollButton.disabled = false;
 });
