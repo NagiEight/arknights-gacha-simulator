@@ -2,6 +2,7 @@ const access = require('./access.js');
 
 const rollButton = document.getElementById();
 const singleRollButton = document.getElementById();
+const bannerList = document.querySelectorAll("input[type='radio'][name='btn_banner']");
 const opDisplay = document.getElementById();
 
 const baseRarities = [
@@ -25,7 +26,15 @@ const baseRarities = [
 
 let rarities = JSON.parse(JSON.stringify(baseRarities));
 let rollCount = 0;
+let currentBanner;
+let totalRollsCount = 0;
 let result = [];
+
+bannerList.forEach((banner) => {
+    banner.addEventListener("change", event => {
+        currentBanner = access.jsonLoader(`banners/info/${event.target.value}.json`);
+    });
+});
 
 const pityCalculator = (raritiesList, rollsPastFifty) => {  
     const sixStar = raritiesList.find(r => r.name === "6");
@@ -38,7 +47,7 @@ const pityCalculator = (raritiesList, rollsPastFifty) => {
 
     raritiesList.forEach(rarity => {
         if(rarity.name !== "6") {
-            rarity.weight = +(rarity.weight * scaleFactor).toFixed(4);
+            rarity.weight =+ (rarity.weight * scaleFactor).toFixed(4);
         }
     });
     
@@ -51,60 +60,208 @@ const pityCalculator = (raritiesList, rollsPastFifty) => {
 
 rollButton.addEventListener("click", () => {
     rollButton.disabled = true;
+    if(opDisplay.innerHTML.length > 0) {
+        opDisplay.innerHTML = "";
+    }
+
+    const hard6RateUp = currentBanner["hard6*RateUp"].length;
+    const soft6RateUp = currentBanner["soft6*RateUp"].length;
+    const fiveRateUp = currentBanner["5*RateUp"].length;
+
     for(let i = 0; i < 10; i++) {
-        rollCount += 1;
+        rollCount++;
+        totalRollsCount++;
 
         if(rollCount > 50) {
             rarities = pityCalculator(rarities, rollCount - 50);
         }
-        
-        result += access.browse(ops, Number(access.gacha(rarities)));
-        if(result[i].rarity === "6") {
-            rollCount = 0;
-            rarities = JSON.parse(JSON.stringify(baseRarities));
-        }
 
-        if(opDisplay.innerHTML.length > 0) {
-            opDisplay.innerHTML = "";
+        rarity = access.gacha(rarities);
+        const isRateUp = Math.floor(Math.random() * 2);
+
+        if(currentBanner.type === "Limited") {
+            if(totalRollsCount === 300) {
+                result.push(currentBanner["hard6*RateUp"][Math.floor(Math.random() * hard6RateUp)]);
+                continue;
+            }
+
+            if(rarity === "6") {
+                rollCount = 0;
+                rarities = JSON.parse(JSON.stringify(baseRarities));
+
+                if(isRateUp === 0) {
+                    const isHardRateUp = Math.floor(Math.random() * 2);
+                    if(isHardRateUp === 1) {
+                        result.push(currentBanner["hard6*RateUp"][access.RNG(hard6RateUp)]);
+                    }
+                    else {
+                        result.push(currentBanner["soft6*RateUp"][access.RNG(soft6RateUp)]);
+                    }
+                    continue;
+                }
+            }
+            else if(rarity === "5"){
+                if(isRateUp === 0) {
+                    result.push(currentBanner["5*RateUp"][access.RNG(fiveRateUp)]);
+                    continue;
+                }
+            }
         }
-        opDisplay.innerHTML += `<div style="
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        ">
-            <p>${result[i].name}</p>
-            <img src="${result[i].img}" alt="${result[i].name}">
-        </div>`
+        else if(currentBanner.type === "TrueLimited") {
+            if(totalRollsCount === 120) {
+                result.push(currentBanner["hard6*RateUp"][access.RNG(hard6RateUp)]);
+                continue;
+            }
+
+            if(rarity === "6") {
+                rollCount = 0;
+                rarities = JSON.parse(JSON.stringify(baseRarities));
+
+                if(isRateUp === 1) {
+                    result.push(currentBanner["hard6*RateUp"][access.RNG(hard6RateUp)]);
+                    continue;
+                }
+            }
+            else if(rarity === "5") {
+                if(isRateUp === 1) {
+                    result.push(currentBanner["5*RateUp"][access.RNG(fiveRateUp)]);
+                    continue;
+                }
+            }
+        }
+        else {
+            if(rarity === "6") {
+                rollCount = 0;
+                rarities = JSON.parse(JSON.stringify(baseRarities));
+
+                if(isRateUp === 1) {
+                    result.push(currentBanner["hard6*RateUp"][access.RNG(hard6RateUp)]);
+                    continue;
+                }
+            }
+            else if(rarity === "5") {
+                if(isRateUp === 1) {
+                    result.push(currentBanner["5*RateUp"][access.RNG(fiveRateUp)]);
+                    continue;
+                }
+            }
+        }
+        result.push(currentBanner["stdRoster"][`${rarity}*`][access.RNG(currentBanner["stdRoster"][`${rarity}*`].length)]);
     }
-    result = []
+    result.forEach(ops => {
+        opDisplay.innerHTML += `<div style="
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+">
+    <img src="${ops.image}" alt="${ops.name}">
+    <p>${ops.name}</p>
+</div>`
+    });
     rollButton.disabled = false;
 });
 
 singleRollButton.addEventListener("click", () => {
     rollButton.disabled = true;
-    rollCount += 1;
-
-    if(rollCount > 50) {
-        rarities = pityCalculator(rarities, rollCount - 50);
-    }
-    
-    result += access.browse(ops, Number(access.gacha(rarities)));
-    if(result[0].rarity === "6") {
-        rollCount = 0;
-        rarities = JSON.parse(JSON.stringify(baseRarities));
-    }
-
     if(opDisplay.innerHTML.length > 0) {
         opDisplay.innerHTML = "";
     }
-    opDisplay.innerHTML += `<div style="
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    ">
-        <p>${result[0].name}</p>
-        <img src="${result[0].img}" alt="${result[0].name}">
-    </div>`
-    result = []
+
+    const hard6RateUp = currentBanner["hard6*RateUp"].length;
+    const soft6RateUp = currentBanner["soft6*RateUp"].length;
+    const fiveRateUp = currentBanner["5*RateUp"].length;
+
+    for(let i = 0; i < 1; i++) {
+        rollCount++;
+        totalRollsCount++;
+
+        if(rollCount > 50) {
+            rarities = pityCalculator(rarities, rollCount - 50);
+        }
+
+        rarity = access.gacha(rarities);
+        const isRateUp = Math.floor(Math.random() * 2);
+
+        if(currentBanner.type === "Limited") {
+            if(totalRollsCount === 300) {
+                result.push(currentBanner["hard6*RateUp"][Math.floor(Math.random() * hard6RateUp)]);
+                continue;
+            }
+
+            if(rarity === "6") {
+                rollCount = 0;
+                rarities = JSON.parse(JSON.stringify(baseRarities));
+
+                if(isRateUp === 0) {
+                    const isHardRateUp = Math.floor(Math.random() * 2);
+                    if(isHardRateUp === 1) {
+                        result.push(currentBanner["hard6*RateUp"][access.RNG(hard6RateUp)]);
+                    }
+                    else {
+                        result.push(currentBanner["soft6*RateUp"][access.RNG(soft6RateUp)]);
+                    }
+                    continue;
+                }
+            }
+            else if(rarity === "5"){
+                if(isRateUp === 0) {
+                    result.push(currentBanner["5*RateUp"][access.RNG(fiveRateUp)]);
+                    continue;
+                }
+            }
+        }
+        else if(currentBanner.type === "TrueLimited") {
+            if(totalRollsCount === 120) {
+                result.push(currentBanner["hard6*RateUp"][access.RNG(hard6RateUp)]);
+                continue;
+            }
+
+            if(rarity === "6") {
+                rollCount = 0;
+                rarities = JSON.parse(JSON.stringify(baseRarities));
+
+                if(isRateUp === 1) {
+                    result.push(currentBanner["hard6*RateUp"][access.RNG(hard6RateUp)]);
+                    continue;
+                }
+            }
+            else if(rarity === "5") {
+                if(isRateUp === 1) {
+                    result.push(currentBanner["5*RateUp"][access.RNG(fiveRateUp)]);
+                    continue;
+                }
+            }
+        }
+        else {
+            if(rarity === "6") {
+                rollCount = 0;
+                rarities = JSON.parse(JSON.stringify(baseRarities));
+
+                if(isRateUp === 1) {
+                    result.push(currentBanner["hard6*RateUp"][access.RNG(hard6RateUp)]);
+                    continue;
+                }
+            }
+            else if(rarity === "5") {
+                if(isRateUp === 1) {
+                    result.push(currentBanner["5*RateUp"][access.RNG(fiveRateUp)]);
+                    continue;
+                }
+            }
+        }
+        result.push(currentBanner["stdRoster"][`${rarity}*`][access.RNG(currentBanner["stdRoster"][`${rarity}*`].length)]);
+    }
+    result.forEach(ops => {
+        opDisplay.innerHTML += `<div style="
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+">
+    <img src="${ops.image}" alt="${ops.name}">
+    <p>${ops.name}</p>
+</div>`
+    });
     rollButton.disabled = false;
 });
