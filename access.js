@@ -1,31 +1,19 @@
-const path = require("path");
-const fs = require('fs');
-
-const jsonLoader = (pathToJSON) => {
+const jsonLoader = async (urlToJSON) => {
     try {
-        const stat = fs.statSync(pathToJSON);
-        if(stat.isFile() && pathToJSON.endsWith(".json")) {
-            const content = fs.readFileSync(pathToJSON, "utf-8");
-            return JSON.parse(content);
+        if(urlToJSON.endsWith(".json")) {
+            const response = await fetch(urlToJSON);
+            if(!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            const jsonData = await response.json();
+            return jsonData;
         }
         else {
             console.log("Not a JSON file.");
         }
     }
     catch(error) {
-        console.error(error);
-    }
-};
-
-const browse = (folder, rarity) => {
-    try {
-        const fullPath = path.join(folder, `${rarity}`);
-        const characters = fs.readdirSync(fullPath);
-        const random = Math.floor(Math.random() * characters.length);
-        return Object.assign(jsonLoader(path.join(fullPath, characters[random])), {"rarity": `${rarity}`});
-    }
-    catch(error) {
-        console.error(error);
+        console.error("Failed to load JSON:", error);
     }
 };
 
@@ -57,7 +45,7 @@ const RNG = (start, end = null) => {
     }
 
     if(start > end) {
-        return 0;
+        return null;
     }
 
     if(end === null) {
@@ -67,6 +55,6 @@ const RNG = (start, end = null) => {
     return Math.floor(Math.random() * (end - start + 1)) + start;
 }
 
-module.exports = {
-    browse, gacha, jsonLoader, RNG
+export {
+    gacha, jsonLoader, RNG
 };
