@@ -53,7 +53,7 @@ const RNG = (start, end = null) => {
         start = 0;
     }
     return Math.floor(Math.random() * (end - start + 1)) + start;
-}
+};
 
 export {
     gacha, jsonLoader, RNG
