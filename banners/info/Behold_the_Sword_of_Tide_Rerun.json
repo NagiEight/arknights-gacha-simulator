@@ -1,0 +1,19 @@
+{
+    "name": "Behold the Sword of Tide Rerun",
+    "type": "Standard",
+    "art": "banners/art/Behold_the_Sword_of_Tide_Rerun.png",
+    "hard6*RateUp": [
+        "Skadi"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Nearl",
+        "Nightmare"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

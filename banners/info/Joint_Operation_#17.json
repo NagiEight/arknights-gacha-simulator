@@ -1,0 +1,26 @@
+{
+    "name": "Joint Operation #17",
+    "type": "Standard",
+    "art": "banners/art/Joint_Operation_#17.png",
+    "hard6*RateUp": [
+        "Dorothy",
+        "Executor the Ex Foedere",
+        "Pozëmka",
+        "Ulpianus"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Aroma",
+        "Ashlock",
+        "Aurora",
+        "Mitm",
+        "Proviso",
+        "Santalla"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

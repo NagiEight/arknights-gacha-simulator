@@ -1,0 +1,21 @@
+{
+    "name": "Standard Pool #74 (Global)",
+    "type": "Standard",
+    "art": "banners/art/Standard_Pool_#74_(Global).png",
+    "hard6*RateUp": [
+        "Gnosis",
+        "Schwarz"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "GreyThroat",
+        "Istina",
+        "Projekt Red"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

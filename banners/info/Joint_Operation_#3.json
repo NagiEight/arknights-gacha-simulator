@@ -1,0 +1,26 @@
+{
+    "name": "Joint Operation #3",
+    "type": "Standard",
+    "art": "banners/art/Joint_Operation_#3.png",
+    "hard6*RateUp": [
+        "Aak",
+        "Bagpipe",
+        "Ceobe",
+        "Hoshiguma"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Asbestos",
+        "Astesia",
+        "Blue Poison",
+        "Broca",
+        "Istina",
+        "Warfarin"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "Standard Pool #72 (Global)",
+    "type": "Standard",
+    "art": "banners/art/Standard_Pool_#72_(Global).png",
+    "hard6*RateUp": [
+        "Eunectes",
+        "Suzuran"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Aosta",
+        "Glaucus",
+        "Sora"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

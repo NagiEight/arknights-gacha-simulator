@@ -1,0 +1,19 @@
+{
+    "name": "Dissonanzen Rerun",
+    "type": "Standard",
+    "art": "banners/art/Dissonanzen_Rerun.png",
+    "hard6*RateUp": [
+        "Ebenholz"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Hibiscus the Purifier",
+        "Lunacub"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

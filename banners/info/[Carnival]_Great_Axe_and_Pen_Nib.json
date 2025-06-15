@@ -1,0 +1,21 @@
+{
+    "name": "[Carnival] Great Axe and Pen Nib",
+    "type": "Limited",
+    "art": "banners/art/[Carnival]_Great_Axe_and_Pen_Nib.png",
+    "hard6*RateUp": [
+        "Gavial the Invincible",
+        "Pozëmka"
+    ],
+    "soft6*RateUp": [
+        "Ch'en the Holungday"
+    ],
+    "5*RateUp": [
+        "Cantabile"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Earthborn Metals Rerun",
+    "type": "Limited",
+    "art": "banners/art/Earthborn_Metals_Rerun.png",
+    "hard6*RateUp": [
+        "Aak",
+        "Nian"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Hung"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

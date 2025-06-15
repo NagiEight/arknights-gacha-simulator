@@ -1,0 +1,17 @@
+{
+    "name": "Quicksand Vortex",
+    "type": "Standard",
+    "art": "banners/art/Quicksand_Vortex.png",
+    "hard6*RateUp": [],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Beeswax",
+        "Chiave"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

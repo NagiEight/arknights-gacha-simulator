@@ -1,0 +1,23 @@
+{
+    "name": "[Celebration] We Mischievous Few",
+    "type": "Limited",
+    "art": "banners/art/[Celebration]_We_Mischievous_Few.png",
+    "hard6*RateUp": [
+        "Lappland the Decadenza",
+        "Vulpisfoglia"
+    ],
+    "soft6*RateUp": [
+        "Muelsyse",
+        "Texas the Omertosa",
+        "Virtuosa"
+    ],
+    "5*RateUp": [
+        "Figurino"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

@@ -5,6 +5,8 @@ const singleRollButton = document.getElementById();
 const bannerList = document.querySelectorAll("input[type=\"radio\"][name=\"btn_banner\"]");
 const body = document.body;
 const opDisplay = document.getElementById();
+const overlay = document.getElementById("overlay");
+const overlayText = document.getElementById("textDislay");
 const exportData = document.getElementById();
 const importData = document.getElementById();
 const customRoll = document.getElementById();
@@ -110,13 +112,9 @@ exportData.addEventListener("click", () => {
 importData.addEventListener("change", (event) => {
     const file = event.target.files[0];
     let temp = jsonReader(file);
-    let HistoryIntegrity;
-    checkHistoryIntegrity(temp[0]).then(integrity => {
-        HistoryIntegrity = integrity;
-    });
 
     if(((!file || file.type !== "application/json")) ||
-    !HistoryIntegrity ||
+    !checkHistoryIntegrity(temp[0]) ||
     Object.keys(temp[1])[0] !== "currentBanner" ||
     !(temp[1].currentBanner in bannersList)) {
         alert("Please drop a valid history file.");
@@ -135,53 +133,25 @@ importData.addEventListener("change", (event) => {
 body.addEventListener("dragover", (event) => {
     event.preventDefault();
     event.stopPropagation();
-    
-    const overlay = document.createElement("div");
-    const text = document.createElement("p");
-    
-    body.appendChild(overlay);
-    overlay.appendChild(text);
-    
-    overlay.id = "dragOverlay";
-    
-    overlay.style.position = "fixed";
-    overlay.style.top = "0";
-    overlay.style.left = "0";
-    overlay.style.width = "100vw";
-    overlay.style.height = "100vh";
-    overlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-    overlay.style.zIndex = "9999";
+
     overlay.style.display = "flex";
-    overlay.style.justifyContent = 'center';
-    overlay.style.alignItems = 'center';
-    
-    text.textContent = "Drop your file here to import pull history";
-    text.style.color = "white";
-    text.style.border = "20px dashed white";
-    text.style.borderRadius = "20px";
-    text.style.fontSize = "24px";
-    text.style.margin = "99vh 99vw";
-    text.style.fontFamily = "Arial, sans-serif";
+    overlayText.textContent = "Drop file to load";
 });
 
 body.addEventListener("dragleave", () => {
-    body.removeChild(document.getElementById("dragOverlay"));
+    overlay.style.display = "none";
 });
 
 body.addEventListener("drop", (event) => {
     event.preventDefault();
     event.stopPropagation();
-    body.removeChild(document.getElementById("dragOverlay"));
+    overlay.style.display = "none";
     
     const file = event.target.files[0];
     let temp = jsonReader(file);
-    let HistoryIntegrity;
-    checkHistoryIntegrity(temp[0]).then(integrity => {
-        HistoryIntegrity = integrity;
-    });
 
     if(((!file || file.type !== "application/json")) ||
-    !HistoryIntegrity ||
+    !checkHistoryIntegrity(temp[0]) ||
     Object.keys(temp[1])[0] !== "currentBanner" ||
     !(temp[1].currentBanner in bannersList)) {
         alert("Please drop a valid history file.");
@@ -192,9 +162,7 @@ body.addEventListener("drop", (event) => {
         currentBanner = temp[1].currentBanner;
     }
 
-    displayHistory(history[0]).then(() => {
-        console.log("Display successfully.")
-    });
+    displayHistory(history[0]);
 });
 
 bannerList.forEach((banner) => {
@@ -205,99 +173,108 @@ bannerList.forEach((banner) => {
     });
 });
 
-const displayHistory = async (history) => {
-    await displayOverlay(() => {
-        for(const banner in history) {
-            const bannerDisplay = document.createElement("div");
+const displayHistory = (history) => {
+    overlay.style.display = "flex";
+    overlayText.textContent = "Loading... Please wait!";
 
-            bannerDisplay.id = banner;
-            historyDisplay.appendChild(bannerDisplay);
+    for(const banner in history) {
+        const bannerDisplay = document.createElement("div");
 
-            for(const rarity in history[banner].ops) {
-                for(const op of history[banner].ops[rarity]) {
-                    const opHistoryContainer = document.createElement("div");
-                    
-                    opHistoryContainer.className = "bg-gray-600 p-1 rounded-lg border border-gray-700 flex mb-4 w-64";
-                    bannerDisplay.appendChild(opHistoryContainer);
+        bannerDisplay.id = banner;
+        historyDisplay.appendChild(bannerDisplay);
 
-                    const opPFPDisplay = document.createElement("img");
+        for(const rarity in history[banner].ops) {
+            for(const op of history[banner].ops[rarity]) {
+                const opHistoryContainer = document.createElement("div");
+                
+                opHistoryContainer.className = "bg-gray-600 p-1 rounded-lg border border-gray-700 flex mb-4 w-64";
+                bannerDisplay.appendChild(opHistoryContainer);
 
-                    opPFPDisplay.className = "w-auto h-12";
-                    opPFPDisplay.alt = op.name;
-                    opPFPDisplay.src = `./imgs/${rarity}/${op.name}`
-                    opHistoryContainer.appendChild(opPFPDisplay);
+                const opPFPDisplay = document.createElement("img");
 
-                    const opDisplayData = document.createElement("div");
+                opPFPDisplay.className = "w-auto h-12";
+                opPFPDisplay.alt = op.name;
+                opPFPDisplay.src = `./imgs/${rarity}/${op.name}`
+                opHistoryContainer.appendChild(opPFPDisplay);
 
-                    opDisplayData.className = "pl-3";
-                    opHistoryContainer.appendChild(opDisplayData);
+                const opDisplayData = document.createElement("div");
 
-                    const opName = document.createElement("p");
+                opDisplayData.className = "pl-3";
+                opHistoryContainer.appendChild(opDisplayData);
 
-                    opName.className = "text-yellow-100 text-xl";
-                    opName.id = `${op.name.split(" ").join("_")}_name`;
-                    opName.textContent = op.name;
+                const opName = document.createElement("p");
 
-                    const opRarity = document.createElement("p");
+                opName.className = "text-yellow-100 text-xl";
+                opName.id = `${op.name.split(" ").join("_")}_name`;
+                opName.textContent = op.name;
 
-                    opRarity.className = "text-yellow-100 text-xl";
-                    opRarity.id = `${op.name.split(" ").join("_")}_rarity`;
-                    opRarity.textContent = "★".repeat(parseInt(rarity));
+                const opRarity = document.createElement("p");
 
-                    const opCount = document.createElement("p");
+                opRarity.className = "text-yellow-100 text-xl";
+                opRarity.id = `${op.name.split(" ").join("_")}_rarity`;
+                opRarity.textContent = "★".repeat(parseInt(rarity));
 
-                    opCount.className = "text-yellow-100 text-xl";
-                    opCount.id = `${op.name.split(" ").join("_")}_count`;
-                    opCount.textContent = `x${op.count}`;
+                const opCount = document.createElement("p");
 
-                    opDisplayData.appendChild(opName);
-                    opDisplayData.appendChild(opRarity);
-                    opDisplayData.appendChild(opCount);
-                }
+                opCount.className = "text-yellow-100 text-xl";
+                opCount.id = `${op.name.split(" ").join("_")}_count`;
+                opCount.textContent = `x${op.count}`;
+
+                opDisplayData.appendChild(opName);
+                opDisplayData.appendChild(opRarity);
+                opDisplayData.appendChild(opCount);
             }
         }
-    }, "Loading... Please wait!");
+    }
+    overlay.style.display = "none";
 };
 
-const checkHistoryIntegrity = async (history) => {
-    return await displayOverlay(() => {
-        const constantBannerKeys = ["10thRollPity", "totalRollsCount", "currentRollCount", "ops"];
-        const constantRarityKeys = ["6*", "5*", "4*", "3*"];
+const checkHistoryIntegrity = (history) => {
+    overlay.style.display = "flex";
+    overlayText.textContent = "Loading... Please wait!";
+    
+    const constantBannerKeys = ["10thRollPity", "totalRollsCount", "currentRollCount", "ops"];
+    const constantRarityKeys = ["6*", "5*", "4*", "3*"];
 
-        if(Object.keys(history).length != constantBannerKeys.length) {
+    if(Object.keys(history).length != constantBannerKeys.length) {
+        overlay.style.display = "none";
+        return false;
+    }
+
+    for(const banner of Object.keys(history)) {
+        if(constantRarityKeys.length != Object.keys(history[banner].ops).length) {
+            overlay.style.display = "none";    
             return false;
         }
 
-        for(const banner of Object.keys(history)) {
-            if(constantRarityKeys.length != Object.keys(history[banner].ops).length) {
+        if(!bannersList.includes(banner)) {
+            overlay.style.display = "none";
+            return false;
+        }
+
+        for(const key of Object.keys(history[banner])) {
+            if(!constantBannerKeys.includes(key)) {
+                overlay.style.display = "none";
                 return false;
-            }
-
-            if(!bannersList.includes(banner)) {
-                return false;
-            }
-
-            for(const key of Object.keys(history[banner])) {
-                if(!constantBannerKeys.includes(key)) {
-                    return false;
-                }
-            }
-
-            for(const rarity of Object.keys(history[banner].ops)) {
-                if(!constantRarityKeys.includes(rarity)) {
-                    return false;
-                }
-
-                for(const op of Object.keys(history[banner].ops[rarity])) {
-                    if(!opsList.includes(op.name)) {
-                        return false;
-                    }
-                }
             }
         }
 
-        return true;
-    }, "Loading... Please wait!");
+        for(const rarity of Object.keys(history[banner].ops)) {
+            if(!constantRarityKeys.includes(rarity)) {
+                overlay.style.display = "none";
+                return false;
+            }
+
+            for(const op of Object.keys(history[banner].ops[rarity])) {
+                if(!opsList.includes(op.name)) {
+                    overlay.style.display = "none";
+                    return false;
+                }
+            }
+        }
+    }
+    overlay.style.display = "none";
+    return true;
 };
 
 const pityCalculator = (baseRarities, rollCount) => {
@@ -467,7 +444,7 @@ const roll = (count) => {
             if(history[currentBanner.name].ops[`${opRarity}*`][i].name === op) {
                 history[currentBanner.name].ops[`${opRarity}*`][i].count += result.filter(ops => ops === op).length;
                 break;
-            }           
+            }
             else if(i + 1 == history[currentBanner.name].ops[`${opRarity}*`].length) {
                 history[currentBanner.name].ops[`${opRarity}*`]
                 .push({"name": op, "count": result.filter(ops => ops === op).length});
@@ -483,46 +460,3 @@ const roll = (count) => {
     singleRollButton.disabled = false;
     customRoll.disabled = false;
 };
-
-const displayOverlay = async (func, displayMessage, 
-    border = false, borderType = null, borderRadius = null, borderWidth = null) => {
-    const loadingScreen = document.createElement("div");
-    const loadingScreenText = document.createElement("p");
-
-    body.appendChild(loadingScreen);
-    loadingScreen.appendChild(loadingScreenText);
-
-    loadingScreen.style.position = "fixed";
-    loadingScreen.style.top = "0";
-    loadingScreen.style.left = "0";
-    loadingScreen.style.width = "100vw";
-    loadingScreen.style.height = "100vh";
-    loadingScreen.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-    loadingScreen.style.zIndex = "9999";
-    loadingScreen.style.display = "flex";
-    loadingScreen.style.justifyContent = 'center';
-    loadingScreen.style.alignItems = 'center';
-    
-    loadingScreenText.textContent = displayMessage;
-    loadingScreenText.style.position = "fixed";
-    loadingScreenText.style.color = "white";
-    loadingScreenText.style.fontSize = "24px";
-    loadingScreenText.style.fontFamily = "Arial, sans-serif";
-
-    if(border) {
-        loadingScreenText.style.border = `${borderWidth} ${borderType}`;
-        loadingScreen.style.borderRadius = `${borderRadius}`;
-    }
-
-    await new Promise(resolve => setTimeout(resolve, 10));
-
-    let result;
-    try {
-        result = await Promise.resolve(func());
-    }
-    finally {
-        body.removeChild(loadingScreen);
-    }
-
-    return result;
-}

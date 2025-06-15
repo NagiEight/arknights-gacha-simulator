@@ -2,63 +2,63 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gacha Site</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8"/>
+    <title>Gacha Site</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
 </head>
 
 <body>
+    <div id="overlay" style="display: none;"><p id="textDislay"></p></div>
+    <main>
+        <div class="grid-cols-2 p-4 flex">
 
-  <main>
-    <div class="grid-cols-2 p-4 flex">
-
-      <div id="banners" class="grid-rows-3">
-        <img src="./imgs/banners/9t0rosp3.bmp" alt="banner" height="auto" width="640"
-          class="rounded-lg border border-gray-700">
-        <div id="pulling-buttons" class="grid-cols-3 flex flex-row-reverse">
-          <button class="bg-red-500 text-white px-4 py-2 rounded-lg w-40"> pull X10</button>
-          <button class="bg-gray-500 text-white px-4 py-2 rounded-lg w-40">pull X1</button>
-          <div class="p-4">number of pulls:</div>
-        </div>
-        <div id="available-operators" class="max-w-2xl">
-          <h1 class="text-xl font-bold mb-4">Available operators</h1>
-          <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
-            <ul class="list-disc pl-6">
-              <li class="text-yellow-100">op6</li>
-              <li class="text-yellow-400">op5</li>
-              <li class="text-purple-400">op4</li>
-              <li class="text-blue-400">op3</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="pl-4">
-
-        <h1 class="text-xl font-bold">History</h1>
-        <div id="character-gallery"
-          class="p-4 grid grid-cols-4 grid-rows-5 gap-4 bg-gray-800 p-4 rounded-lg border border-gray-700 w-auto max-w h-full">
-          <div class="bg-gray-600 p-1 rounded-lg border border-gray-700 flex mb-4 w-64">
-            <img src="imgs\cropped\Lin-cropped.png" alt="avt" class="w-auto h-12">
-            <div class="pl-3">
-              <p class="text-yellow-100 text-xl">Lin</p>
-              <p class="text-yellow-100 text-xl">★★★★★★</p>
-              <p class="text-yellow-100 text-xl">count: 24</p>
+            <div id="banners" class="grid-rows-3">
+                <img src="./imgs/banners/9t0rosp3.bmp" alt="banner" height="auto" width="640"
+                    class="rounded-lg border border-gray-700">
+                <div id="pulling-buttons" class="grid-cols-3 flex flex-row-reverse">
+                    <button class="bg-red-500 text-white px-4 py-2 rounded-lg w-40"> pull X10</button>
+                    <button class="bg-gray-500 text-white px-4 py-2 rounded-lg w-40">pull X1</button>
+                    <div class="p-4">number of pulls:</div>
+                </div>
+                <div id="available-operators" class="max-w-2xl">
+                    <h1 class="text-xl font-bold mb-4">Available operators</h1>
+                    <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
+                        <ul class="list-disc pl-6">
+                            <li class="text-yellow-100">op6</li>
+                            <li class="text-yellow-400">op5</li>
+                            <li class="text-purple-400">op4</li>
+                            <li class="text-blue-400">op3</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="bg-gray-600 p-1 rounded-lg border border-gray-700 flex mb-4 w-64">
-            <img src="imgs\cropped\notlin.png" alt="avt" class="w-auto h-12">
-            <div class="pl-3">
-              <p class="text-yellow-100 text-xl">Not Lin</p>
-              <p class="text-yellow-100 text-xl">★★★★★★★</p>
-              <p class="text-yellow-100 text-xl">count: 1</p>
-            </div>
-          </div>
-        </div>
-      </div>
 
-    </div>
-  </main>
+            <div class="pl-4">
+
+                <h1 class="text-xl font-bold">History</h1>
+                <div id="character-gallery"
+                    class="p-4 grid grid-cols-4 grid-rows-5 gap-4 bg-gray-800 p-4 rounded-lg border border-gray-700 w-auto max-w h-full">
+                    <div class="bg-gray-600 p-1 rounded-lg border border-gray-700 flex mb-4 w-64">
+                        <img src="imgs\cropped\Lin-cropped.png" alt="avt" class="w-auto h-12">
+                        <div class="pl-3">
+                            <p class="text-yellow-100 text-xl">Lin</p>
+                            <p class="text-yellow-100 text-xl">★★★★★★</p>
+                            <p class="text-yellow-100 text-xl">count: 24</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-600 p-1 rounded-lg border border-gray-700 flex mb-4 w-64">
+                        <img src="imgs\cropped\notlin.png" alt="avt" class="w-auto h-12">
+                        <div class="pl-3">
+                            <p class="text-yellow-100 text-xl">Not Lin</p>
+                            <p class="text-yellow-100 text-xl">★★★★★★★</p>
+                            <p class="text-yellow-100 text-xl">count: 1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
 </body>
 </html>

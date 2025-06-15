@@ -1,0 +1,19 @@
+{
+    "name": "Heart of Steel, the Raging Ironhide Rerun",
+    "type": "Standard",
+    "art": "banners/art/Heart_of_Steel,_the_Raging_Ironhide_Rerun.png",
+    "hard6*RateUp": [
+        "Eunectes"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Flint",
+        "Meteorite"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

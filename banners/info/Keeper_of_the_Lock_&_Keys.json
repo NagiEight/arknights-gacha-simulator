@@ -1,0 +1,19 @@
+{
+    "name": "Keeper of the Lock & Keys",
+    "type": "Standard",
+    "art": "banners/art/Keeper_of_the_Lock_&_Keys.png",
+    "hard6*RateUp": [
+        "Mostima"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Firewatch",
+        "Waai Fu"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

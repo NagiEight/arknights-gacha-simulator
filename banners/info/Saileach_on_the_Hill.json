@@ -1,0 +1,18 @@
+{
+    "name": "Saileach on the Hill",
+    "type": "Standard",
+    "art": "banners/art/Saileach_on_the_Hill.png",
+    "hard6*RateUp": [
+        "Saileach"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Mulberry"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

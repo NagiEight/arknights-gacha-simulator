@@ -1,0 +1,21 @@
+{
+    "name": "Standard Pool #88 (Global)",
+    "type": "Standard",
+    "art": "banners/art/Standard_Pool_#88_(Global).png",
+    "hard6*RateUp": [
+        "Hoshiguma",
+        "Thorns"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Glaucus",
+        "GreyThroat",
+        "Iris"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

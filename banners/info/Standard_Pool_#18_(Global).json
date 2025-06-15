@@ -1,0 +1,21 @@
+{
+    "name": "Standard Pool #18 (Global)",
+    "type": "Standard",
+    "art": "banners/art/Standard_Pool_#18_(Global).png",
+    "hard6*RateUp": [
+        "Siege",
+        "Skadi"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Provence",
+        "Specter",
+        "Texas"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

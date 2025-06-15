@@ -1,0 +1,19 @@
+{
+    "name": "The Piper on the Knoll",
+    "type": "Standard",
+    "art": "banners/art/The_Piper_on_the_Knoll.png",
+    "hard6*RateUp": [
+        "Bagpipe"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Sesa",
+        "Zima"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

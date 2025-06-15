@@ -1,0 +1,26 @@
+{
+    "name": "Joint Operation #5",
+    "type": "Standard",
+    "art": "banners/art/Joint_Operation_#5.png",
+    "hard6*RateUp": [
+        "Phantom",
+        "Saga",
+        "Schwarz",
+        "Surtr"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "April",
+        "Ayerscarpe",
+        "Beeswax",
+        "Flint",
+        "Iris",
+        "Meteorite"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

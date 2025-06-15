@@ -1,0 +1,22 @@
+{
+    "name": "[Carnival] Cloudtop Lucid Dreams",
+    "type": "Limited",
+    "art": "banners/art/[Carnival]_Cloudtop_Lucid_Dreams.png",
+    "hard6*RateUp": [
+        "Eyjafjalla the Hvít Aska",
+        "Swire the Elegant Wit"
+    ],
+    "soft6*RateUp": [
+        "Ch'en the Holungday",
+        "Gavial the Invincible"
+    ],
+    "5*RateUp": [
+        "Poncirus"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

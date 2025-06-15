@@ -1,0 +1,19 @@
+{
+    "name": "Roaring Cliffrunner",
+    "type": "Standard",
+    "art": "banners/art/Roaring_Cliffrunner.png",
+    "hard6*RateUp": [
+        "Horn"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Rockrock",
+        "Warfarin"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

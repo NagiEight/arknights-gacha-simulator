@@ -1,0 +1,19 @@
+{
+    "name": "Ray of Light",
+    "type": "Standard",
+    "art": "banners/art/Ray_of_Light.png",
+    "hard6*RateUp": [
+        "Ray"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Mulberry",
+        "Warmy"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

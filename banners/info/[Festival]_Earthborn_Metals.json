@@ -1,0 +1,19 @@
+{
+    "name": "[Festival] Earthborn Metals",
+    "type": "Limited",
+    "art": "banners/art/[Festival]_Earthborn_Metals.png",
+    "hard6*RateUp": [
+        "Aak",
+        "Nian"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Hung"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

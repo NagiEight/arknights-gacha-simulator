@@ -1,0 +1,19 @@
+{
+    "name": "Pathfinder of Sands Rerun",
+    "type": "Standard",
+    "art": "banners/art/Pathfinder_of_Sands_Rerun.png",
+    "hard6*RateUp": [
+        "Dorothy"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Greyy the Lightningbearer",
+        "Rockrock"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

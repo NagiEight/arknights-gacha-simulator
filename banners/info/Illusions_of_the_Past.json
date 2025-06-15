@@ -1,0 +1,19 @@
+{
+    "name": "Illusions of the Past",
+    "type": "Standard",
+    "art": "banners/art/Illusions_of_the_Past.png",
+    "hard6*RateUp": [
+        "Phantom"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Ptilopsis",
+        "Shamare"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

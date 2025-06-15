@@ -1,0 +1,21 @@
+{
+    "name": "Standard Pool #100 (Global)",
+    "type": "Standard",
+    "art": "banners/art/Standard_Pool_#100_(Global).png",
+    "hard6*RateUp": [
+        "Blemishine",
+        "Młynar"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Harmonie",
+        "La Pluma",
+        "Lunacub"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "Standard Pool #135 (Global)",
+    "type": "Standard",
+    "art": "banners/art/Standard_Pool_#135_(Global).png",
+    "hard6*RateUp": [
+        "Młynar",
+        "Reed the Flame Shadow"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Aurora",
+        "Harmonie",
+        "Warmy"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Forging Steel",
+    "type": "Standard",
+    "art": "banners/art/Forging_Steel.png",
+    "hard6*RateUp": [
+        "Hellagur"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Astesia",
+        "Croissant"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "name": "[Celebration] Through a Path of Briars",
+    "type": "Limited",
+    "art": "banners/art/[Celebration]_Through_a_Path_of_Briars.png",
+    "hard6*RateUp": [
+        "Penance",
+        "Texas the Omertosa"
+    ],
+    "soft6*RateUp": [
+        "Nearl the Radiant Knight",
+        "Rosmontis",
+        "Skadi the Corrupting Heart"
+    ],
+    "5*RateUp": [
+        "Lunacub"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

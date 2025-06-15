@@ -1,0 +1,19 @@
+{
+    "name": "The Glory of Silverash",
+    "type": "Standard",
+    "art": "banners/art/The_Glory_of_Silverash.png",
+    "hard6*RateUp": [
+        "SilverAsh"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Cliffheart",
+        "Pramanix"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

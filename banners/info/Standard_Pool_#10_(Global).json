@@ -1,0 +1,21 @@
+{
+    "name": "Standard Pool #10 (Global)",
+    "type": "Standard",
+    "art": "banners/art/Standard_Pool_#10_(Global).png",
+    "hard6*RateUp": [
+        "Ifrit",
+        "Skadi"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Liskarm",
+        "Nightmare",
+        "Skyfire"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

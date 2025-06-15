@@ -1,0 +1,22 @@
+{
+    "name": "The Front That Was #1",
+    "type": "Standard",
+    "art": "banners/art/The_Front_That_Was_#1.png",
+    "hard6*RateUp": [
+        "Horn",
+        "Mudrock",
+        "Saileach"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Mulberry",
+        "Rockrock",
+        "Whisperain"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

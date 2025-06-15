@@ -1,0 +1,21 @@
+{
+    "name": "Standard Pool #62 (Global)",
+    "type": "Standard",
+    "art": "banners/art/Standard_Pool_#62_(Global).png",
+    "hard6*RateUp": [
+        "Ceobe",
+        "Skadi"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "La Pluma",
+        "Skyfire",
+        "Tsukinogi"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

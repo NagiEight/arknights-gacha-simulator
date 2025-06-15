@@ -1,0 +1,19 @@
+{
+    "name": "To Bloom From a Dim Flame",
+    "type": "Standard",
+    "art": "banners/art/To_Bloom_From_a_Dim_Flame.png",
+    "hard6*RateUp": [
+        "Reed the Flame Shadow"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Harmonie",
+        "Skyfire"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "Standard Pool #103 (Global)",
+    "type": "Standard",
+    "art": "banners/art/Standard_Pool_#103_(Global).png",
+    "hard6*RateUp": [
+        "Mizuki",
+        "Penance"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Corroserum",
+        "Hibiscus the Purifier",
+        "Mr. Nothing"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

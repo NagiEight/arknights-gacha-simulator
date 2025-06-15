@@ -1,0 +1,19 @@
+{
+    "name": "Springtide Snowfall",
+    "type": "Standard",
+    "art": "banners/art/Springtide_Snowfall.png",
+    "hard6*RateUp": [
+        "Qiubai"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Hung",
+        "Wind Chimes"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

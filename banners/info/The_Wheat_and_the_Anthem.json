@@ -1,0 +1,19 @@
+{
+    "name": "The Wheat and the Anthem",
+    "type": "Standard",
+    "art": "banners/art/The_Wheat_and_the_Anthem.png",
+    "hard6*RateUp": [
+        "Archetto"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Chiave",
+        "Iris"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

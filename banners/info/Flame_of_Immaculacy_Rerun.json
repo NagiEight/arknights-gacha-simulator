@@ -1,0 +1,19 @@
+{
+    "name": "Flame of Immaculacy Rerun",
+    "type": "Standard",
+    "art": "banners/art/Flame_of_Immaculacy_Rerun.png",
+    "hard6*RateUp": [
+        "Fiammetta"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Executor",
+        "Kazemaru"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

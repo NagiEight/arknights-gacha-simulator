@@ -1,0 +1,19 @@
+{
+    "name": "Enthusiasm Expansion Explosion",
+    "type": "Standard",
+    "art": "banners/art/Enthusiasm_Expansion_Explosion.png",
+    "hard6*RateUp": [
+        "Blaze"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "GreyThroat",
+        "Skyfire"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

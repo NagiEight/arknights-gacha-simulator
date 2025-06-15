@@ -1,0 +1,22 @@
+{
+    "name": "[Festival] Unstrained Liquor, Pellucid Heart",
+    "type": "Limited",
+    "art": "banners/art/[Festival]_Unstrained_Liquor,_Pellucid_Heart.png",
+    "hard6*RateUp": [
+        "Lee",
+        "Ling"
+    ],
+    "soft6*RateUp": [
+        "Dusk",
+        "Nian"
+    ],
+    "5*RateUp": [
+        "Blacknight"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

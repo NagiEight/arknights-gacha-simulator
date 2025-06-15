@@ -1,0 +1,19 @@
+{
+    "name": "Heart of Steel, The Rage Ironhide",
+    "type": "Standard",
+    "art": "banners/art/Heart_of_Steel,_The_Rage_Ironhide.png",
+    "hard6*RateUp": [
+        "Eunectes"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Flint",
+        "Meteorite"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

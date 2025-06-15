@@ -1,0 +1,21 @@
+{
+    "name": "Standard Pool #43 (Global)",
+    "type": "Standard",
+    "art": "banners/art/Standard_Pool_#43_(Global).png",
+    "hard6*RateUp": [
+        "Eyjafjalla",
+        "Schwarz"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Aosta",
+        "Franka",
+        "Liskarm"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}
