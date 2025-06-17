@@ -99,7 +99,7 @@ customRollCount.addEventListener("input", () => {
 
 exportData.addEventListener("click", () => {
     const dataString = JSON.stringify(history, null, 4);
-    const Blob = new Blob([JSON.stringify({ dataString, currentBanner: currentBanner.name })], { type: "application/json" });
+    const Blob = new Blob([JSON.stringify({ dataString, "currentBanner": currentBanner.name })], { type: "application/json" });
     
     const temp = document.createElement("a");
     temp.href = URL.createObjectURL(Blob);
@@ -347,6 +347,7 @@ const roll = (count) => {
     for(let i = 0; i < count; i++) {
         rollCount++;
         totalRollsCount++;
+        let isRateUp;
 
         if(rollCount > 50) {
             rarities = pityCalculator(rarities, rollCount - 50);
@@ -358,8 +359,13 @@ const roll = (count) => {
         else {
             rarity = access.gacha(rarities);
         }
-
-        const isRateUp = access.RNG(1);
+        
+        if(currentBanner.name.contains("Joint")) {
+            isRateUp = 1;
+        }
+        else {
+            isRateUp = access.RNG(1);
+        }
 
         if(currentBanner.type === "Limited" && rarity === "6") {
             rollCount = 0;
