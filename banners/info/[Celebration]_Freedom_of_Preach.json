@@ -1,18 +1,18 @@
 {
-    "name": "[Celebration] Our Kind",
+    "name": "[Celebration] Freedom of Preach",
     "type": "Standard",
-    "art": "banners/art/[Celebration]_Our_Kind.png",
+    "art": "banners/art/[Celebration]_Freedom_of_Preach.png",
     "hard6*RateUp": [
-        "Logos",
-        "Wiš'adel"
+        "Exusiai the New Covenant",
+        "Lemuen"
     ],
     "soft6*RateUp": [
         "Muelsyse",
-        "Specter the Unchained",
-        "Texas the Omertosa"
+        "Virtuosa",
+        "Wiš'adel"
     ],
     "5*RateUp": [
-        "Fang the Fire-Sharpened"
+        "Gracebearer"
     ],
     "stdRoster": {
         "6*": [],

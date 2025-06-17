@@ -1,14 +1,14 @@
 {
-    "name": "Dissonanzen Rerun",
+    "name": "And the Canoe'll Carry Us to You",
     "type": "Standard",
-    "art": "banners/art/Dissonanzen_Rerun.png",
+    "art": "banners/art/And_the_Canoe'll_Carry_Us_to_You.png",
     "hard6*RateUp": [
-        "Ebenholz"
+        "Entelechia"
     ],
     "soft6*RateUp": [],
     "5*RateUp": [
-        "Hibiscus the Purifier",
-        "Lunacub"
+        "Nowell",
+        "Warmy"
     ],
     "stdRoster": {
         "6*": [],

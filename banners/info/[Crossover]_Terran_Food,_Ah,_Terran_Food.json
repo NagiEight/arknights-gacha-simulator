@@ -1,6 +1,6 @@
 {
     "name": "[Crossover] Terran Food, Ah, Terran Food",
-    "type": "Limited",
+    "type": "TrueLimited",
     "art": "banners/art/[Crossover]_Terran_Food,_Ah,_Terran_Food.png",
     "hard6*RateUp": [
         "Marcille"

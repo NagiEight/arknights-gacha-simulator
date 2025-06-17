@@ -1,0 +1,28 @@
+{
+    "name": "Orienteering #2",
+    "type": "Standard",
+    "art": "banners/art/Orienteering_#2.png",
+    "hard6*RateUp": [
+        "Flametail",
+        "Hoederer",
+        "Logos",
+        "Stainless",
+        "Ulpianus",
+        "Vina Victoria"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Ashlock",
+        "Cantabile",
+        "Kirara",
+        "La Pluma",
+        "Lucilla",
+        "Quercus"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

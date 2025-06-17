@@ -1,14 +1,13 @@
 {
-    "name": "Behold the Sword of Tide Rerun",
+    "name": "Command: Reconstruction",
     "type": "Standard",
-    "art": "banners/art/Behold_the_Sword_of_Tide_Rerun.png",
+    "art": "banners/art/Command_Reconstruction.png",
     "hard6*RateUp": [
-        "Skadi"
+        "Mon3tr"
     ],
     "soft6*RateUp": [],
     "5*RateUp": [
-        "Nearl",
-        "Nightmare"
+        "Alanna"
     ],
     "stdRoster": {
         "6*": [],

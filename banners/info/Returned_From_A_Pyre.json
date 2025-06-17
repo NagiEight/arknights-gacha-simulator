@@ -1,14 +1,14 @@
 {
-    "name": "To Bloom From a Dim Flame Rerun",
+    "name": "Returned From A Pyre",
     "type": "Standard",
-    "art": "banners/art/To_Bloom_From_a_Dim_Flame_Rerun.png",
+    "art": "banners/art/Returned_From_A_Pyre.png",
     "hard6*RateUp": [
-        "Reed the Flame Shadow"
+        "Necrass"
     ],
     "soft6*RateUp": [],
     "5*RateUp": [
-        "Greyy the Lightningbearer",
-        "Harmonie"
+        "Sand Reckoner",
+        "Wulfenite"
     ],
     "stdRoster": {
         "6*": [],

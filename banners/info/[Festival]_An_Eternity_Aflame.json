@@ -1,18 +1,18 @@
 {
-    "name": "[Festival] Solitude Universal",
+    "name": "[Festival] An Eternity Aflame",
     "type": "Standard",
-    "art": "banners/art/[Festival]_Solitude_Universal.png",
+    "art": "banners/art/[Festival]_An_Eternity_Aflame.png",
     "hard6*RateUp": [
-        "Chongyue",
-        "Lin"
+        "Blaze the Igniting Spark",
+        "Yu"
     ],
     "soft6*RateUp": [
-        "Dusk",
+        "Chongyue",
         "Ling",
-        "Nian"
+        "Shu"
     ],
     "5*RateUp": [
-        "Firewhistle"
+        "Surfer"
     ],
     "stdRoster": {
         "6*": [],
