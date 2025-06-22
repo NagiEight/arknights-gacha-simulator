@@ -71,7 +71,7 @@ let currentBanner;
 
 access.jsonLoader("opData.json").then(data => {
     for(const opPath of data) {
-        opsList.push({"name": opPath.split("/")[3], "rarity": opPath.split("/")[2]});
+        opsList.push(opPath.split("/")[3]);
     }
 });
 
@@ -110,10 +110,15 @@ exportData.addEventListener("click", () => {
 });
 
 importData.addEventListener("change", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    overlay.style.border = "none";
+    overlayText.textContent = "Loading... Please wait!";
+
     const file = event.target.files[0];
     let temp = jsonReader(file);
 
-    if(((!file || file.type !== "application/json")) ||
+    if((!file || file.type !== "application/json") ||
     !checkHistoryIntegrity(temp[0]) ||
     Object.keys(temp[1])[0] !== "currentBanner" ||
     !(temp[1].currentBanner in bannersList)) {
@@ -125,9 +130,9 @@ importData.addEventListener("change", (event) => {
         currentBanner = temp[1].currentBanner;
     }
 
-    displayHistory().then(() => {
-        console.log("Display successfully.")
-    });
+    displayHistory(history[0]);
+
+    overlay.style.display = "none";
 });
 
 body.addEventListener("dragover", (event) => {
@@ -145,12 +150,13 @@ body.addEventListener("dragleave", () => {
 body.addEventListener("drop", (event) => {
     event.preventDefault();
     event.stopPropagation();
-    overlay.style.display = "none";
+    overlay.style.border = "none";
+    overlayText.textContent = "Loading... Please wait!";
     
     const file = event.target.files[0];
     let temp = jsonReader(file);
 
-    if(((!file || file.type !== "application/json")) ||
+    if((!file || file.type !== "application/json") ||
     !checkHistoryIntegrity(temp[0]) ||
     Object.keys(temp[1])[0] !== "currentBanner" ||
     !(temp[1].currentBanner in bannersList)) {
@@ -163,6 +169,8 @@ body.addEventListener("drop", (event) => {
     }
 
     displayHistory(history[0]);
+
+    overlay.style.display = "none";
 });
 
 bannerList.forEach((banner) => {
@@ -174,9 +182,6 @@ bannerList.forEach((banner) => {
 });
 
 const displayHistory = (history) => {
-    overlay.style.display = "flex";
-    overlayText.textContent = "Loading... Please wait!";
-
     for(const banner in history) {
         const bannerDisplay = document.createElement("div");
 
@@ -226,54 +231,58 @@ const displayHistory = (history) => {
             }
         }
     }
-    overlay.style.display = "none";
 };
 
 const checkHistoryIntegrity = (history) => {
-    overlay.style.display = "flex";
-    overlayText.textContent = "Loading... Please wait!";
-    
     const constantBannerKeys = ["10thRollPity", "totalRollsCount", "currentRollCount", "ops"];
     const constantRarityKeys = ["6*", "5*", "4*", "3*"];
 
     if(Object.keys(history).length != constantBannerKeys.length) {
-        overlay.style.display = "none";
         return false;
     }
 
     for(const banner of Object.keys(history)) {
+        if(typeof history[banner] !== "object") {
+            return false;
+        }
+
         if(constantRarityKeys.length != Object.keys(history[banner].ops).length) {
-            overlay.style.display = "none";    
             return false;
         }
 
         if(!bannersList.includes(banner)) {
-            overlay.style.display = "none";
             return false;
         }
 
         for(const key of Object.keys(history[banner])) {
             if(!constantBannerKeys.includes(key)) {
-                overlay.style.display = "none";
+                return false;
+            }
+
+            if(key === "ops" && typeof history[banner][key] !== "object") {
+                return false;
+            }
+            else if(key !== "ops" && typeof history[banner][key] !== "number") {
                 return false;
             }
         }
 
         for(const rarity of Object.keys(history[banner].ops)) {
             if(!constantRarityKeys.includes(rarity)) {
-                overlay.style.display = "none";
                 return false;
             }
 
             for(const op of Object.keys(history[banner].ops[rarity])) {
                 if(!opsList.includes(op.name)) {
-                    overlay.style.display = "none";
+                    return false;
+                }
+
+                if(typeof op.count !== "number") {
                     return false;
                 }
             }
         }
     }
-    overlay.style.display = "none";
     return true;
 };
 
@@ -347,38 +356,27 @@ const roll = (count) => {
     for(let i = 0; i < count; i++) {
         rollCount++;
         totalRollsCount++;
-        let isRateUp;
+        let isRateUp = 0;
 
         if(rollCount > 50) {
             rarities = pityCalculator(rarities, rollCount - 50);
         }
 
-        if(totalRollsCount === 10 && tenthRollPity) {
-            rarity = access.gacha(tenthRoll);
-        }
-        else {
-            rarity = access.gacha(rarities);
-        }
-        
-        if(currentBanner.name.contains("Joint")) {
-            isRateUp = 1;
-        }
-        else {
-            isRateUp = access.RNG(1);
-        }
+        rarity = totalRollsCount === 10 && tenthRollPity ? 
+        access.gacha(tenthRoll) : access.gacha(rarities);
 
+        isRateUp = currentBanner.name.contains("Joint") ? 1 : access.RNG(1);
+        
         if(currentBanner.type === "Limited" && rarity === "6") {
             rollCount = 0;
             rarities = JSON.parse(JSON.stringify(baseRarities));
 
             if(isRateUp === 1) {
                 const isHardRateUp = access.RNG(1);
-                if(isHardRateUp === 1) {
-                    result.push(currentBanner["hard6*RateUp"][access.RNG(hard6RateUp)]);
-                }
-                else {
-                    result.push(currentBanner["soft6*RateUp"][access.RNG(soft6RateUp)]);
-                }
+
+                isHardRateUp === 1 ? 
+                result.push(currentBanner["hard6*RateUp"][access.RNG(hard6RateUp)]) :
+                result.push(currentBanner["soft6*RateUp"][access.RNG(soft6RateUp)]);
                 continue;
             }
         }
