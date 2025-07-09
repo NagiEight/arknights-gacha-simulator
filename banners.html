@@ -49,5 +49,15 @@
 </div>
 
 
+<!-- index.html -->
+<div id="sidebar-placeholder"></div>
+
+<script>
+  fetch('sidebar.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('sidebar-placeholder').innerHTML = html;
+    });
+</script>
 
 <script src="./banners.js"></script>
