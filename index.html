@@ -2,28 +2,44 @@
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8" />
     <title>Gacha Site</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
+    <!-- <link href="index.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <div id="overlay" style="display: none;"><p id="textDislay"></p></div>
+<body class="bg-[url('./banners/art/The_Wheat_and_the_Anthem.png')] bg-none bg-gray-900 mx-auto px-4">
+    <div id="overlay" style="display: none;">
+        <p id="textDislay"></p>
+    </div>
     <main>
-        <div class="grid-cols-2 p-4 flex">
+        <div class="grid-cols-3 p-4 flex">
 
             <div id="banners" class="grid-rows-3">
-                <img src="./imgs/banners/9t0rosp3.bmp" alt="banner" height="auto" width="640"
+                <img src="./banners/art/[Carnival]_Cloudtop_Lucid_Dreams.png" alt="banner-image"
                     class="rounded-lg border border-gray-700">
                 <div id="pulling-buttons" class="grid-cols-3 flex flex-row-reverse">
-                    <button class="bg-red-500 text-white px-4 py-2 rounded-lg w-40"> pull X10</button>
-                    <button class="bg-gray-500 text-white px-4 py-2 rounded-lg w-40">pull X1</button>
+                    <button
+                        class="relative px-6 py-3 font-bold text-white uppercase tracking-wider bg-[repeating-linear-gradient(45deg,#FFBE59,#FFBE59_10px,#1f2937_10px,#1f2937_20px)] border border-yellow-500 shadow hover:scale-105 transition-transform">
+                        <div class="text-yellow-300 bg-black text-lg">
+                            pull x10
+                        </div>
+                    </button>
+                    <button
+                        class="relative px-6 py-3 font-bold text-white uppercase tracking-wider bg-[repeating-linear-gradient(45deg,#FF5959,#FF5959_10px,#1f2937_10px,#1f2937_20px)] border border-red-500 shadow hover:scale-105 transition-transform">
+                        <div class="text-red-500 bg-black text-lg">
+                            pull x1
+                        </div>
+                    </button>
+
+
                     <div class="p-4">number of pulls:</div>
                 </div>
+
                 <div id="available-operators" class="max-w-2xl">
-                    <h1 class="text-xl font-bold mb-4">Available operators</h1>
-                    <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
+                    <h1 class="text-xl font-bold mb-4 bg-gray-500/60 backdrop-blur-md text-white">Available operators
+                    </h1>
+                    <div class="bg-gray-800/80 backdrop-blur-sm p-4 rounded-lg border border-gray-700">
                         <ul class="list-disc pl-6">
                             <li class="text-yellow-100">op6</li>
                             <li class="text-yellow-400">op5</li>
@@ -33,8 +49,28 @@
                     </div>
                 </div>
             </div>
+            <button id="sidebar-toggle" class="fixed top-4 left-4 z-50 p-2 bg-yellow-500 text-black rounded">
+                ☰ Menu
+            </button>
+            <aside id="sidebar" class="w-64 h-screen bg-gray-900/90 backdrop-blur-md text-white fixed top-0 left-0 shadow-lg hidden">
+                <div class="flex items-center justify-between p-6 border-b border-gray-700">
+                    <span class="text-2xl font-bold">🧭 Navigation</span>
+                    <button id="sidebar-close" class="text-gray-400 hover:text-white text-xl">
+                        ✕
+                    </button>
 
-            <div class="pl-4">
+                </div>
+                <nav class="p-4 space-y-2">
+                    <a href="#home" class="block px-4 py-2 rounded hover:bg-gray-700 transition">#Home</a>
+                    <a href="#gacha" class="block px-4 py-2 rounded hover:bg-gray-700 transition">#Gacha</a>
+                    <a href="#history" class="block px-4 py-2 rounded hover:bg-gray-700 transition">#History</a>
+                    <a href="#news" class="block px-4 py-2 rounded hover:bg-gray-700 transition">#News</a>
+                    <a href="#banners" class="block px-4 py-2 rounded hover:bg-gray-700 transition">#Banners</a>
+                    <a href="#operators" class="block px-4 py-2 rounded hover:bg-gray-700 transition">#Operators</a>
+                </nav>
+            </aside>
+
+            <!-- <div class="pl-4">
 
                 <h1 class="text-xl font-bold">History</h1>
                 <div id="character-gallery"
@@ -56,9 +92,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </main>
     <script src="index.js"></script>
+    <script src="sidebar.js"></script>
 </body>
+
 </html>
