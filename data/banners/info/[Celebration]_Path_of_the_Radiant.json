@@ -1,0 +1,22 @@
+{
+    "name": "[Celebration] Path of the Radiant",
+    "type": "Limited",
+    "art": "data/banners/art/[Celebration]_Path_of_the_Radiant.png",
+    "hard6*RateUp": [
+        "Flametail",
+        "Nearl the Radiant Knight"
+    ],
+    "soft6*RateUp": [
+        "Rosmontis",
+        "W"
+    ],
+    "5*RateUp": [
+        "Corroserum"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

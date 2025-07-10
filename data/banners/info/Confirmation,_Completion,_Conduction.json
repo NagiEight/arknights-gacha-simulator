@@ -1,0 +1,19 @@
+{
+    "name": "Confirmation, Completion, Conduction",
+    "type": "Standard",
+    "art": "data/banners/art/Confirmation,_Completion,_Conduction.png",
+    "hard6*RateUp": [
+        "Thorns the Lodestar"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Grain Buds",
+        "Tecno"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

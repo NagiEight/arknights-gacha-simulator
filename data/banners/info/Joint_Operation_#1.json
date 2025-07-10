@@ -1,0 +1,26 @@
+{
+    "name": "Joint Operation #1",
+    "type": "Standard",
+    "art": "data/banners/art/Joint_Operation_#1.png",
+    "hard6*RateUp": [
+        "Angelina",
+        "Ch'en",
+        "Eyjafjalla",
+        "SilverAsh"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Croissant",
+        "Manticore",
+        "Platinum",
+        "Ptilopsis",
+        "Swire",
+        "Texas"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "From the Spark",
+    "type": "Standard",
+    "art": "data/banners/art/From_the_Spark.png",
+    "hard6*RateUp": [
+        "Pallas"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Projekt Red",
+        "Specter"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

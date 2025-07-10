@@ -1,0 +1,23 @@
+{
+    "name": "[Festival] Solitude Universal",
+    "type": "Limited",
+    "art": "data/banners/art/[Festival]_Solitude_Universal.png",
+    "hard6*RateUp": [
+        "Chongyue",
+        "Lin"
+    ],
+    "soft6*RateUp": [
+        "Dusk",
+        "Ling",
+        "Nian"
+    ],
+    "5*RateUp": [
+        "Firewhistle"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

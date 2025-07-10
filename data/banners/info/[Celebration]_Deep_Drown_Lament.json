@@ -1,0 +1,21 @@
+{
+    "name": "[Celebration] Deep Drown Lament",
+    "type": "Limited",
+    "art": "data/banners/art/[Celebration]_Deep_Drown_Lament.png",
+    "hard6*RateUp": [
+        "Kal'tsit",
+        "Skadi the Corrupting Heart"
+    ],
+    "soft6*RateUp": [
+        "W"
+    ],
+    "5*RateUp": [
+        "Akafuyu"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "Standard Pool #111 (Global)",
+    "type": "Standard",
+    "art": "data/banners/art/Standard_Pool_#111_(Global).png",
+    "hard6*RateUp": [
+        "Flametail",
+        "Qiubai"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Corroserum",
+        "Mr. Nothing",
+        "Wind Chimes"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

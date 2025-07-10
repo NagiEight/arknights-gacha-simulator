@@ -1,0 +1,23 @@
+{
+    "name": "[Carnival] Engraver of Quicksand",
+    "type": "Limited",
+    "art": "data/banners/art/[Carnival]_Engraver_of_Quicksand.png",
+    "hard6*RateUp": [
+        "Narantuya",
+        "Pepe"
+    ],
+    "soft6*RateUp": [
+        "Ch'en the Holungday",
+        "Eyjafjalla the Hvít Aska",
+        "Gavial the Invincible"
+    ],
+    "5*RateUp": [
+        "Sand Reckoner"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

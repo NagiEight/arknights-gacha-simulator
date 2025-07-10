@@ -1,0 +1,26 @@
+{
+    "name": "Joint Operation #15",
+    "type": "Standard",
+    "art": "data/banners/art/Joint_Operation_#15.png",
+    "hard6*RateUp": [
+        "Lin",
+        "Młynar",
+        "Qiubai",
+        "Zuo Le"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Akafuyu",
+        "Andreana",
+        "Blacknight",
+        "Mr. Nothing",
+        "Rockrock",
+        "Warmy"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

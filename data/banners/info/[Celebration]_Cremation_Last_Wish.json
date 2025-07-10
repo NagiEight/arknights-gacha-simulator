@@ -1,0 +1,19 @@
+{
+    "name": "[Celebration] Cremation Last Wish",
+    "type": "Limited",
+    "art": "data/banners/art/[Celebration]_Cremation_Last_Wish.png",
+    "hard6*RateUp": [
+        "W",
+        "Weedy"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Elysium"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

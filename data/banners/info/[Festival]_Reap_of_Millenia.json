@@ -1,0 +1,23 @@
+{
+    "name": "[Festival] Reap of Millenia",
+    "type": "Limited",
+    "art": "data/banners/art/[Festival]_Reap_of_Millenia.png",
+    "hard6*RateUp": [
+        "Shu",
+        "Zuo Le"
+    ],
+    "soft6*RateUp": [
+        "Chongyue",
+        "Dusk",
+        "Ling"
+    ],
+    "5*RateUp": [
+        "Grain Buds"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

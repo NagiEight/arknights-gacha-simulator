@@ -1,0 +1,26 @@
+{
+    "name": "Joint Operation #14",
+    "type": "Standard",
+    "art": "data/banners/art/Joint_Operation_#14.png",
+    "hard6*RateUp": [
+        "Executor the Ex Foedere",
+        "Jessica the Liberated",
+        "Kal'tsit",
+        "Pozëmka"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Corroserum",
+        "Firewhistle",
+        "Kazemaru",
+        "La Pluma",
+        "Poncirus",
+        "Wind Chimes"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

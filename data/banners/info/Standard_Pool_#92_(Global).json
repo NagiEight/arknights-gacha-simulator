@@ -1,0 +1,21 @@
+{
+    "name": "Standard Pool #92 (Global)",
+    "type": "Standard",
+    "art": "data/banners/art/Standard_Pool_#92_(Global).png",
+    "hard6*RateUp": [
+        "Bagpipe",
+        "Hellagur"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Hibiscus the Purifier",
+        "Mayer",
+        "Zima"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

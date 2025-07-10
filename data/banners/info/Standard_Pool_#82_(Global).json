@@ -1,0 +1,21 @@
+{
+    "name": "Standard Pool #82 (Global)",
+    "type": "Standard",
+    "art": "data/banners/art/Standard_Pool_#82_(Global).png",
+    "hard6*RateUp": [
+        "Exusiai",
+        "Fiammetta"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Astesia",
+        "Corroserum",
+        "Whisperain"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "The Rolling Thunder",
+    "type": "Standard",
+    "art": "data/banners/art/The_Rolling_Thunder.png",
+    "hard6*RateUp": [
+        "Leizi the Thunderbringer"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Fang the Fire-Sharpened",
+        "Record Keeper"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

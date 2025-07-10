@@ -1,0 +1,21 @@
+{
+    "name": "Standard Pool #20 (Global)",
+    "type": "Standard",
+    "art": "data/banners/art/Standard_Pool_#20_(Global).png",
+    "hard6*RateUp": [
+        "Eyjafjalla",
+        "Magallan"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Croissant",
+        "FEater",
+        "Warfarin"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "[Festival] Hidden Moon",
+    "type": "Limited",
+    "art": "data/banners/art/[Festival]_Hidden_Moon.png",
+    "hard6*RateUp": [
+        "Dusk",
+        "Saga"
+    ],
+    "soft6*RateUp": [
+        "Nian"
+    ],
+    "5*RateUp": [
+        "Mr. Nothing"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

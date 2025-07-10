@@ -1,0 +1,26 @@
+{
+    "name": "Joint Operation #10",
+    "type": "Standard",
+    "art": "data/banners/art/Joint_Operation_#10.png",
+    "hard6*RateUp": [
+        "Goldenglow",
+        "Mountain",
+        "Mudrock",
+        "Saga"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Aosta",
+        "Ashlock",
+        "Firewhistle",
+        "Kafka",
+        "Kirara",
+        "Proviso"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

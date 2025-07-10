@@ -1,0 +1,19 @@
+{
+    "name": "Drillelectric",
+    "type": "Standard",
+    "art": "data/banners/art/Drillelectric.png",
+    "hard6*RateUp": [
+        "Exusiai"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Broca",
+        "Reed"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Anchor in the Deep",
+    "type": "Standard",
+    "art": "data/banners/art/Anchor_in_the_Deep.png",
+    "hard6*RateUp": [
+        "Ulpianus"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Grain Buds",
+        "Lucilla"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

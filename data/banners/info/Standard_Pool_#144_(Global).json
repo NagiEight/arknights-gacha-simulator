@@ -1,0 +1,21 @@
+{
+    "name": "Standard Pool #144 (Global)",
+    "type": "Standard",
+    "art": "data/banners/art/Standard_Pool_#144_(Global).png",
+    "hard6*RateUp": [
+        "Ho'olheyak",
+        "Lin"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Bassline",
+        "Corroserum",
+        "Melanite"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

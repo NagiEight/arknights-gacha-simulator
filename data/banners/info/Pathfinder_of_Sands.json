@@ -1,0 +1,19 @@
+{
+    "name": "Pathfinder of Sands",
+    "type": "Standard",
+    "art": "data/banners/art/Pathfinder_of_Sands.png",
+    "hard6*RateUp": [
+        "Dorothy"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Greyy the Lightningbearer",
+        "Ptilopsis"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

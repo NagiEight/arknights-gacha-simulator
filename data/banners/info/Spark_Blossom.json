@@ -1,0 +1,19 @@
+{
+    "name": "Spark Blossom",
+    "type": "Standard",
+    "art": "data/banners/art/Spark_Blossom.png",
+    "hard6*RateUp": [
+        "Goldenglow"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Quercus",
+        "Skyfire"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

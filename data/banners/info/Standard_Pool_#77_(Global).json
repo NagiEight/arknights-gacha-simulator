@@ -1,0 +1,21 @@
+{
+    "name": "Standard Pool #77 (Global)",
+    "type": "Standard",
+    "art": "data/banners/art/Standard_Pool_#77_(Global).png",
+    "hard6*RateUp": [
+        "Hellagur",
+        "Mizuki"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Beeswax",
+        "Blacknight",
+        "Manticore"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

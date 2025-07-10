@@ -1,4 +1,4 @@
 *.py
 *.bat
 *.txt
-test.js
+test*

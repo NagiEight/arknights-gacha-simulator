@@ -1,0 +1,19 @@
+{
+    "name": "Unfettered Magma",
+    "type": "Standard",
+    "art": "data/banners/art/Unfettered_Magma.png",
+    "hard6*RateUp": [
+        "Surtr"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "April",
+        "Elysium"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Never Gilded",
+    "type": "Standard",
+    "art": "data/banners/art/Never_Gilded.png",
+    "hard6*RateUp": [
+        "Vina Victoria"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Bobbing",
+        "Lucilla"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

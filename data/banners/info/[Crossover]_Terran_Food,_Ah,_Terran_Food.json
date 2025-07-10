@@ -1,0 +1,19 @@
+{
+    "name": "[Crossover] Terran Food, Ah, Terran Food",
+    "type": "TrueLimited",
+    "art": "data/banners/art/[Crossover]_Terran_Food,_Ah,_Terran_Food.png",
+    "hard6*RateUp": [
+        "Marcille"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Chilchuck",
+        "Laios"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

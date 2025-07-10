@@ -1,0 +1,17 @@
+{
+    "name": "Misty Wild",
+    "type": "Standard",
+    "art": "data/banners/art/Misty_Wild.png",
+    "hard6*RateUp": [],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Asbestos",
+        "Tsukinogi"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

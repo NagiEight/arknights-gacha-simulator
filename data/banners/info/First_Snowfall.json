@@ -1,0 +1,19 @@
+{
+    "name": "First Snowfall",
+    "type": "Standard",
+    "art": "data/banners/art/First_Snowfall.png",
+    "hard6*RateUp": [
+        "Rosa"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Istina",
+        "Leonhardt"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

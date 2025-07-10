@@ -1,0 +1,19 @@
+{
+    "name": "Dithyramb Unending",
+    "type": "Standard",
+    "art": "data/banners/art/Dithyramb_Unending.png",
+    "hard6*RateUp": [
+        "Tragodia"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Sand Reckoner",
+        "Tippi"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Arbiter Aequissimus",
+    "type": "Standard",
+    "art": "data/banners/art/Arbiter_Aequissimus.png",
+    "hard6*RateUp": [
+        "Executor the Ex Foedere"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Cantabile",
+        "Spuria"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

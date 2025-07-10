@@ -1,0 +1,21 @@
+{
+    "name": "Standard Pool #08 (Global)",
+    "type": "Standard",
+    "art": "data/banners/art/Standard_Pool_#08_(Global).png",
+    "hard6*RateUp": [
+        "Hoshiguma",
+        "Nightingale"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Lappland",
+        "Texas",
+        "Warfarin"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

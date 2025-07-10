@@ -1,0 +1,21 @@
+{
+    "name": "[Celebration] Forget Me Not",
+    "type": "Limited",
+    "art": "data/banners/art/[Celebration]_Forget_Me_Not.png",
+    "hard6*RateUp": [
+        "Mudrock",
+        "Rosmontis"
+    ],
+    "soft6*RateUp": [
+        "W"
+    ],
+    "5*RateUp": [
+        "Whisperain"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}

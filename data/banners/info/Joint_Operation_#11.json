@@ -1,0 +1,26 @@
+{
+    "name": "Joint Operation #11",
+    "type": "Standard",
+    "art": "data/banners/art/Joint_Operation_#11.png",
+    "hard6*RateUp": [
+        "Lee",
+        "Młynar",
+        "Penance",
+        "Pozëmka"
+    ],
+    "soft6*RateUp": [],
+    "5*RateUp": [
+        "Akafuyu",
+        "Aurora",
+        "Cement",
+        "Harmonie",
+        "Melanite",
+        "Whisperain"
+    ],
+    "stdRoster": {
+        "6*": [],
+        "5*": [],
+        "4*": [],
+        "3*": []
+    }
+}
