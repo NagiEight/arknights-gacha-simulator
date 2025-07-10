@@ -1,4 +1,5 @@
-    const gridBtn = document.getElementById('grid-view');
+
+const gridBtn = document.getElementById('grid-view');
 const listBtn = document.getElementById('list-view');
 const gallery = document.getElementById('gallery');
 
