@@ -7,7 +7,7 @@ toggleBtn.addEventListener('click', () => {
     sidebar.classList.toggle('hidden');
     toggleBtn.classList.toggle('hidden');
 });
-sidebarClose.addEventListener('click', () => {
+sidebarClose.addEventListener('click',() => {
     sidebar.classList.toggle('hidden');
     toggleBtn.classList.toggle('hidden');
 });
