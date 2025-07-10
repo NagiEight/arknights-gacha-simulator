@@ -1,3 +1,4 @@
+import {sidebarWrapper} from "sidebarDisplay.js";
 
 const gridBtn = document.getElementById('grid-view');
 const listBtn = document.getElementById('list-view');
