@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8" />
+    <title>Gacha Site</title>
+    <!-- <link href="index.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[url('data/banners/art/The_Wheat_and_the_Anthem.png')] bg-none bg-gray-900 mx-auto px-4">
+
+    <div id="overlay" style="display: none;">
+        <p id="textDislay"></p>
+    </div>
+    <main>
+        <nav class="bg-gray-900 text-white font-sans shadow-md">
+            <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+                <div class="text-lg font-bold tracking-wide">
+                    <span class="text-blue-400">Arknights</span> Gacha Simulator
+                </div>
+                <ul class="flex space-x-6">
+                    <li><a href="#Home" class="hover:text-blue-400 transition-colors">Home</a></li>
+                    <li><a href="#Gacha" class="hover:text-blue-400 transition-colors">Gacha</a></li>
+                    <li><a href="#History" class="hover:text-blue-400 transition-colors">History</a></li>
+                    <li><a href="#Operators" class="hover:text-blue-400 transition-colors">Operators</a></li>
+                    <li><a href="#Banners" class="hover:text-blue-400 transition-colors">Banners</a></li>
+                </ul>
+            </div>
+        </nav>
+    </main>
+    <div>
+        <div class="bg-gray-900 min-h-screen p-6 text-white">
+  <h2 class="text-2xl font-bold mb-4">Operator Archive</h2>
+
+  <!-- Search Bar -->
+  <div class="mb-6">
+    <input 
+      type="text" 
+      id="search" 
+      placeholder="Search operators..." 
+      class="w-full px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-600 focus:outline-none focus:ring focus:ring-blue-400"
+    />
+  </div>
+
+  <!-- Gallery Grid -->
+  <div id="gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-10 gap-6">
+    <!-- Each operator card -->
+    <div class="operator-card bg-gray-800 rounded-lg overflow-hidden shadow-lg" data-name="Exusiai">
+      <img src="../data/ops/arts/6/Exusiai.png" alt="Exusiai" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold">Exusiai</h3>
+        <p class="text-sm text-gray-400">Sniper</p>
+        <span class="text-yellow-400">★ ★ ★ ★ ★ ★</span>
+      </div>
+    </div>
+    <!-- Each operator card -->
+    <div class="operator-card bg-gray-800 rounded-lg overflow-hidden shadow-lg" data-name="Exusiai">
+      <img src="../data/ops/arts/6/Exusiai.png" alt="Exusiai" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold">Exusiai</h3>
+        <p class="text-sm text-gray-400">Sniper</p>
+        <span class="text-yellow-400">★ ★ ★ ★ ★ ★</span>
+      </div>
+    </div>
+    <!-- Each operator card -->
+    <div class="operator-card bg-gray-800 rounded-lg overflow-hidden shadow-lg" data-name="Exusiai">
+      <img src="../data/ops/arts/6/Exusiai.png" alt="Exusiai" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold">Exusiai</h3>
+        <p class="text-sm text-gray-400">Sniper</p>
+        <span class="text-yellow-400">★ ★ ★ ★ ★ ★</span>
+      </div>
+    </div>
+    <!-- Each operator card -->
+    <div class="operator-card bg-gray-800 rounded-lg overflow-hidden shadow-lg" data-name="Exusiai">
+      <img src="../data/ops/arts/6/Exusiai.png" alt="Exusiai" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold">Exusiai</h3>
+        <p class="text-sm text-gray-400">Sniper</p>
+        <span class="text-yellow-400">★ ★ ★ ★ ★ ★</span>
+      </div>
+    </div>
+    <!-- Each operator card -->
+    <div class="operator-card bg-gray-800 rounded-lg overflow-hidden shadow-lg" data-name="Exusiai">
+      <img src="../data/ops/arts/6/Exusiai.png" alt="Exusiai" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold">Exusiai</h3>
+        <p class="text-sm text-gray-400">Sniper</p>
+        <span class="text-yellow-400">★ ★ ★ ★ ★ ★</span>
+      </div>
+    </div>
+
+    <!-- Duplicate and change data-name, names, images for more operators -->
+  </div>
+</div>
+
+<!-- Search Script -->
+<script>
+  const search = document.getElementById("search");
+  const cards = document.querySelectorAll(".operator-card");
+
+  search.addEventListener("input", (e) => {
+    const term = e.target.value.toLowerCase();
+    cards.forEach(card => {
+      const name = card.dataset.name.toLowerCase();
+      card.style.display = name.includes(term) ? "block" : "none";
+    });
+  });
+</script>
+
+    </div>
+</body>
