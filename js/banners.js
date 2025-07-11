@@ -1,4 +1,4 @@
-import * as access from "access.js";
+import * as access from "/js/access.js";
  
 const gridBtn = document.getElementById('grid-view');
 const listBtn = document.getElementById('list-view');
@@ -26,6 +26,7 @@ access.jsonLoader("../data/bannerData.json").then(data => {
         const bannerInfo = document.createElement("div");
         const bannerHeader = document.createElement("h3");
         const ENDate = document.createElement("p");
+        const bannerType = document.createElement("p");
         
         banner.className = "bg-gray-800 rounded-lg overflow-hidden shadow hover:shadow-lg transition";
 
@@ -36,6 +37,7 @@ access.jsonLoader("../data/bannerData.json").then(data => {
         bannerHeader.className = "text-white font-semibold text-lg";
 
         ENDate.className = "text-gray-400 text-sm";
+        bannerType.className = "text-gray-400 text-sm";
 
         access.jsonLoader(encodeURIComponent(path)).then(data => {
             bannerHeader.textContent = data.name;

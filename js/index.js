@@ -1,4 +1,4 @@
-import * as access from "./access.js";
+import * as access from "access.js";
 
 const rollButton = document.getElementById();
 const singleRollButton = document.getElementById();
