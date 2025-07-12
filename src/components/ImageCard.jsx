@@ -1,4 +1,3 @@
-// src/components/ImageCard.jsx
 export default function ImageCard({ src, alt }) {
   return (
     <div style={styles.card}>

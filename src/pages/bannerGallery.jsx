@@ -1,4 +1,4 @@
-import BannerSection from '../components/BannerSection.jsx';
+import BannerCard from '../components/BannerCard.jsx';
 import * as access from "../utils/access.jsx"
 
 const BannersDisplay = () => {
@@ -10,11 +10,12 @@ const BannersDisplay = () => {
             access.jsonLoader(basePath + bannerPath).then(jsonData => {
                 const bannerID = bannerPath.split("/")[3].replace(".json", "");
                 const bannerName = jsonData.name;
-                const bannerArtPath =  
+                const bannerArtPath = jsonData.art;
 
-                output.push(BannerSection())
+                output.push(BannerCard(bannerID, bannerName, bannerArtPath))
             });
         }
+        return output;
     });
 };
 
