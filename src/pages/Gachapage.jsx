@@ -11,8 +11,6 @@ const GachaPage = () => (
       <BannerSection />
       <PullButtons />
       <AvailableOperators />
-      <HistorySection />
-      <Pagination />
     </main>
   </div>
 );
