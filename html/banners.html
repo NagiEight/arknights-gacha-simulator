@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8" />
+    <title>Gacha Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <div class="flex flex-wrap items-center gap-2 p-4 bg-gray-800 rounded-lg">
+        <!-- Search Button -->
+        <button id="search"
+            class="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-yellow-500 hover:bg-yellow-600 rounded transition">
+            🔍 Search
+        </button>
+
+        <!-- Grid View Button -->
+        <button id="grid-view"
+            class="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-gray-700 hover:bg-gray-600 rounded transition">
+            🟦 Grid View
+        </button>
+
+        <!-- List View Button -->
+        <button id="list-view"
+            class="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-gray-700 hover:bg-gray-600 rounded transition">
+            📋 List View
+        </button>
+    </div>
+    <div id="gallery" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4"></div>
+    <!-- index.html -->
+    <div id="sidebar-placeholder"></div>
+
+    <script type="module">
+        fetch("sidebar.html")
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById("sidebar-placeholder").innerHTML = html;
+
+                const menuButton = document.getElementById("sidebar-toggle");
+                const sidebar = document.getElementById("sidebar");
+                const closeButton = document.getElementById("sidebar-close");
+
+                menuButton.addEventListener("click", () => {
+                    sidebar.classList.toggle("hidden");
+                    menuButton.classList.toggle("hidden");
+                });
+
+                closeButton.addEventListener("click", () => {
+                    sidebar.classList.toggle("hidden");
+                    menuButton.classList.toggle("hidden");
+                });
+            });
+    </script>
+    <script type="module" src="/js/banners.js"></script>
+</body>
