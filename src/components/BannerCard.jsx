@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const BannerCard = ({bannerID, bannerName, bannerArtPath, date = ""}) => {
   return (
-    <Link to={`/banners/${bannerID}`} className="block cursor-pointer">
+    <Link to={`/gacha/${bannerID}`} className="block cursor-pointer">
     
     <div className="bg-gray-800 hover:bg-gray-700 rounded-lg overflow-hidden shadow-lg duration-300">
       <img src={bannerArtPath} alt={bannerID} className="w-full h-48 object-cover" />
