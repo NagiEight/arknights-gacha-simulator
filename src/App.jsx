@@ -13,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/gacha" element={<Gachapage />} />
+        <Route path="/gacha/:bannerID" element={<Gachapage />} />
         <Route path="/banners" element={<Bannerpage />} />
       </Routes>
     </>

@@ -8,9 +8,7 @@ import Navbar from '../components/NavBar.jsx';
 const GachaPage = () => (
   <div>
     <main>
-      <BannerSection />
-      <PullButtons />
-      <AvailableOperators />
+      gacha page
     </main>
   </div>
 );
