@@ -1,9 +1,9 @@
-const BannerSection = () => (
+const BannerSection = ({bannerID}) => (
   <div className="grid-cols-2 p-4 flex">
     <div className="relative grid-rows-2">
       <img
-        src="./data/banners/art/[Carnival]_Cloudtop_Lucid_Dreams.png"
-        alt="banner-image"
+        src={`/data/banners/art/${bannerID}.png`}
+        alt={bannerID}
         className="rounded-lg border border-gray-700"
       />
       <div className="absolute bottom-3 left-2 bg-gray-900/70 text-white text-xs px-3 py-1 rounded width-20">

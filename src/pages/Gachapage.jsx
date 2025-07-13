@@ -1,14 +1,16 @@
 import { useParams } from 'react-router-dom';
+import BannerSection from '../components/BannerSection';
 
 const GachaPage = () => {
   const { bannerID } = useParams();
-  return(
+  return (
 
-  <div>
-    <main>
-      bannerID = {bannerID}
-    </main>
-  </div>
+    <div>
+      <main>
+        bannerID = {bannerID}
+        <BannerSection bannerID={bannerID} />
+      </main>
+    </div>
   );
 }
 
