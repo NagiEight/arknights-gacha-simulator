@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import BannerCard from '../components/BannerCard.jsx';
-import bannerDB from "../mergedDB.json";
+import bannerDB from "../bannersDB.json";
 
 function Bannerpage() {
     const [banners, setBanners] = useState([]);
@@ -24,7 +24,7 @@ function Bannerpage() {
                     <BannerCard 
                     key={id}
                     bannerID={id}
-                    bannerName={data.name}
+                    bannerName={data. name}
                     bannerArtPath={`/${data.art.replace("#", "%23")}`}
                     date={getRandomDate()}
                     />
