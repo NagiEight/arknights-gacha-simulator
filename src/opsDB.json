@@ -1,0 +1,1134 @@
+{
+    "Adnachiel": {
+        "art": "data/ops/arts/Adnachiel.png",
+        "rarity": "3"
+    },
+    "Ansel": {
+        "art": "data/ops/arts/Ansel.png",
+        "rarity": "3"
+    },
+    "Beagle": {
+        "art": "data/ops/arts/Beagle.png",
+        "rarity": "3"
+    },
+    "Cardigan": {
+        "art": "data/ops/arts/Cardigan.png",
+        "rarity": "3"
+    },
+    "Catapult": {
+        "art": "data/ops/arts/Catapult.png",
+        "rarity": "3"
+    },
+    "Fang": {
+        "art": "data/ops/arts/Fang.png",
+        "rarity": "3"
+    },
+    "Hibiscus": {
+        "art": "data/ops/arts/Hibiscus.png",
+        "rarity": "3"
+    },
+    "Kroos": {
+        "art": "data/ops/arts/Kroos.png",
+        "rarity": "3"
+    },
+    "Lava": {
+        "art": "data/ops/arts/Lava.png",
+        "rarity": "3"
+    },
+    "Melantha": {
+        "art": "data/ops/arts/Melantha.png",
+        "rarity": "3"
+    },
+    "Midnight": {
+        "art": "data/ops/arts/Midnight.png",
+        "rarity": "3"
+    },
+    "Orchid": {
+        "art": "data/ops/arts/Orchid.png",
+        "rarity": "3"
+    },
+    "Plume": {
+        "art": "data/ops/arts/Plume.png",
+        "rarity": "3"
+    },
+    "Popukar": {
+        "art": "data/ops/arts/Popukar.png",
+        "rarity": "3"
+    },
+    "Spot": {
+        "art": "data/ops/arts/Spot.png",
+        "rarity": "3"
+    },
+    "Steward": {
+        "art": "data/ops/arts/Steward.png",
+        "rarity": "3"
+    },
+    "Vanilla": {
+        "art": "data/ops/arts/Vanilla.png",
+        "rarity": "3"
+    },
+    "Aciddrop": {
+        "art": "data/ops/arts/Aciddrop.png",
+        "rarity": "4"
+    },
+    "Ambriel": {
+        "art": "data/ops/arts/Ambriel.png",
+        "rarity": "4"
+    },
+    "Arene": {
+        "art": "data/ops/arts/Arene.png",
+        "rarity": "4"
+    },
+    "Beanstalk": {
+        "art": "data/ops/arts/Beanstalk.png",
+        "rarity": "4"
+    },
+    "Beehunter": {
+        "art": "data/ops/arts/Beehunter.png",
+        "rarity": "4"
+    },
+    "Bubble": {
+        "art": "data/ops/arts/Bubble.png",
+        "rarity": "4"
+    },
+    "Chestnut": {
+        "art": "data/ops/arts/Chestnut.png",
+        "rarity": "4"
+    },
+    "Click": {
+        "art": "data/ops/arts/Click.png",
+        "rarity": "4"
+    },
+    "Courier": {
+        "art": "data/ops/arts/Courier.png",
+        "rarity": "4"
+    },
+    "Cuora": {
+        "art": "data/ops/arts/Cuora.png",
+        "rarity": "4"
+    },
+    "Cutter": {
+        "art": "data/ops/arts/Cutter.png",
+        "rarity": "4"
+    },
+    "Deepcolor": {
+        "art": "data/ops/arts/Deepcolor.png",
+        "rarity": "4"
+    },
+    "Dobermann": {
+        "art": "data/ops/arts/Dobermann.png",
+        "rarity": "4"
+    },
+    "Dur-nar": {
+        "art": "data/ops/arts/Dur-nar.png",
+        "rarity": "4"
+    },
+    "Earthspirit": {
+        "art": "data/ops/arts/Earthspirit.png",
+        "rarity": "4"
+    },
+    "Estelle": {
+        "art": "data/ops/arts/Estelle.png",
+        "rarity": "4"
+    },
+    "Frostleaf": {
+        "art": "data/ops/arts/Frostleaf.png",
+        "rarity": "4"
+    },
+    "Gavial": {
+        "art": "data/ops/arts/Gavial.png",
+        "rarity": "4"
+    },
+    "Gitano": {
+        "art": "data/ops/arts/Gitano.png",
+        "rarity": "4"
+    },
+    "Gravel": {
+        "art": "data/ops/arts/Gravel.png",
+        "rarity": "4"
+    },
+    "Greyy": {
+        "art": "data/ops/arts/Greyy.png",
+        "rarity": "4"
+    },
+    "Gummy": {
+        "art": "data/ops/arts/Gummy.png",
+        "rarity": "4"
+    },
+    "Haze": {
+        "art": "data/ops/arts/Haze.png",
+        "rarity": "4"
+    },
+    "Humus": {
+        "art": "data/ops/arts/Humus.png",
+        "rarity": "4"
+    },
+    "Indigo": {
+        "art": "data/ops/arts/Indigo.png",
+        "rarity": "4"
+    },
+    "Jackie": {
+        "art": "data/ops/arts/Jackie.png",
+        "rarity": "4"
+    },
+    "Jaye": {
+        "art": "data/ops/arts/Jaye.png",
+        "rarity": "4"
+    },
+    "Jessica": {
+        "art": "data/ops/arts/Jessica.png",
+        "rarity": "4"
+    },
+    "Lutonada": {
+        "art": "data/ops/arts/Lutonada.png",
+        "rarity": "4"
+    },
+    "Matoimaru": {
+        "art": "data/ops/arts/Matoimaru.png",
+        "rarity": "4"
+    },
+    "Matterhorn": {
+        "art": "data/ops/arts/Matterhorn.png",
+        "rarity": "4"
+    },
+    "May": {
+        "art": "data/ops/arts/May.png",
+        "rarity": "4"
+    },
+    "Meteor": {
+        "art": "data/ops/arts/Meteor.png",
+        "rarity": "4"
+    },
+    "Mousse": {
+        "art": "data/ops/arts/Mousse.png",
+        "rarity": "4"
+    },
+    "Myrrh": {
+        "art": "data/ops/arts/Myrrh.png",
+        "rarity": "4"
+    },
+    "Myrtle": {
+        "art": "data/ops/arts/Myrtle.png",
+        "rarity": "4"
+    },
+    "Perfumer": {
+        "art": "data/ops/arts/Perfumer.png",
+        "rarity": "4"
+    },
+    "Pinecone": {
+        "art": "data/ops/arts/Pinecone.png",
+        "rarity": "4"
+    },
+    "Podenco": {
+        "art": "data/ops/arts/Podenco.png",
+        "rarity": "4"
+    },
+    "Purestream": {
+        "art": "data/ops/arts/Purestream.png",
+        "rarity": "4"
+    },
+    "Roberta": {
+        "art": "data/ops/arts/Roberta.png",
+        "rarity": "4"
+    },
+    "Rope": {
+        "art": "data/ops/arts/Rope.png",
+        "rarity": "4"
+    },
+    "Scavenger": {
+        "art": "data/ops/arts/Scavenger.png",
+        "rarity": "4"
+    },
+    "Shaw": {
+        "art": "data/ops/arts/Shaw.png",
+        "rarity": "4"
+    },
+    "Shirayuki": {
+        "art": "data/ops/arts/Shirayuki.png",
+        "rarity": "4"
+    },
+    "Sussurro": {
+        "art": "data/ops/arts/Sussurro.png",
+        "rarity": "4"
+    },
+    "Totter": {
+        "art": "data/ops/arts/Totter.png",
+        "rarity": "4"
+    },
+    "Utage": {
+        "art": "data/ops/arts/Utage.png",
+        "rarity": "4"
+    },
+    "Verdant": {
+        "art": "data/ops/arts/Verdant.png",
+        "rarity": "4"
+    },
+    "Vermeil": {
+        "art": "data/ops/arts/Vermeil.png",
+        "rarity": "4"
+    },
+    "Vigna": {
+        "art": "data/ops/arts/Vigna.png",
+        "rarity": "4"
+    },
+    "Windscoot": {
+        "art": "data/ops/arts/Windscoot.png",
+        "rarity": "4"
+    },
+    "Akafuyu": {
+        "art": "data/ops/arts/Akafuyu.png",
+        "rarity": "5"
+    },
+    "Alanna": {
+        "art": "data/ops/arts/Alanna.png",
+        "rarity": "5"
+    },
+    "Almond": {
+        "art": "data/ops/arts/Almond.png",
+        "rarity": "5"
+    },
+    "Andreana": {
+        "art": "data/ops/arts/Andreana.png",
+        "rarity": "5"
+    },
+    "Aosta": {
+        "art": "data/ops/arts/Aosta.png",
+        "rarity": "5"
+    },
+    "April": {
+        "art": "data/ops/arts/April.png",
+        "rarity": "5"
+    },
+    "Aroma": {
+        "art": "data/ops/arts/Aroma.png",
+        "rarity": "5"
+    },
+    "Asbestos": {
+        "art": "data/ops/arts/Asbestos.png",
+        "rarity": "5"
+    },
+    "Ashlock": {
+        "art": "data/ops/arts/Ashlock.png",
+        "rarity": "5"
+    },
+    "Astesia": {
+        "art": "data/ops/arts/Astesia.png",
+        "rarity": "5"
+    },
+    "Aurora": {
+        "art": "data/ops/arts/Aurora.png",
+        "rarity": "5"
+    },
+    "Ayerscarpe": {
+        "art": "data/ops/arts/Ayerscarpe.png",
+        "rarity": "5"
+    },
+    "Bassline": {
+        "art": "data/ops/arts/Bassline.png",
+        "rarity": "5"
+    },
+    "Beeswax": {
+        "art": "data/ops/arts/Beeswax.png",
+        "rarity": "5"
+    },
+    "Blacknight": {
+        "art": "data/ops/arts/Blacknight.png",
+        "rarity": "5"
+    },
+    "Blitz": {
+        "art": "data/ops/arts/Blitz.png",
+        "rarity": "5"
+    },
+    "Blue Poison": {
+        "art": "data/ops/arts/Blue Poison.png",
+        "rarity": "5"
+    },
+    "Bobbing": {
+        "art": "data/ops/arts/Bobbing.png",
+        "rarity": "5"
+    },
+    "Broca": {
+        "art": "data/ops/arts/Broca.png",
+        "rarity": "5"
+    },
+    "Cantabile": {
+        "art": "data/ops/arts/Cantabile.png",
+        "rarity": "5"
+    },
+    "Cement": {
+        "art": "data/ops/arts/Cement.png",
+        "rarity": "5"
+    },
+    "Chiave": {
+        "art": "data/ops/arts/Chiave.png",
+        "rarity": "5"
+    },
+    "Chilchuck": {
+        "art": "data/ops/arts/Chilchuck.png",
+        "rarity": "5"
+    },
+    "Cliffheart": {
+        "art": "data/ops/arts/Cliffheart.png",
+        "rarity": "5"
+    },
+    "Corroserum": {
+        "art": "data/ops/arts/Corroserum.png",
+        "rarity": "5"
+    },
+    "Croissant": {
+        "art": "data/ops/arts/Croissant.png",
+        "rarity": "5"
+    },
+    "Doc": {
+        "art": "data/ops/arts/Doc.png",
+        "rarity": "5"
+    },
+    "Elysium": {
+        "art": "data/ops/arts/Elysium.png",
+        "rarity": "5"
+    },
+    "Executor": {
+        "art": "data/ops/arts/Executor.png",
+        "rarity": "5"
+    },
+    "Fang the Fire-Sharpened": {
+        "art": "data/ops/arts/Fang the Fire-Sharpened.png",
+        "rarity": "5"
+    },
+    "FEater": {
+        "art": "data/ops/arts/FEater.png",
+        "rarity": "5"
+    },
+    "Figurino": {
+        "art": "data/ops/arts/Figurino.png",
+        "rarity": "5"
+    },
+    "Firewatch": {
+        "art": "data/ops/arts/Firewatch.png",
+        "rarity": "5"
+    },
+    "Firewhistle": {
+        "art": "data/ops/arts/Firewhistle.png",
+        "rarity": "5"
+    },
+    "Flint": {
+        "art": "data/ops/arts/Flint.png",
+        "rarity": "5"
+    },
+    "Franka": {
+        "art": "data/ops/arts/Franka.png",
+        "rarity": "5"
+    },
+    "Frost": {
+        "art": "data/ops/arts/Frost.png",
+        "rarity": "5"
+    },
+    "Glaucus": {
+        "art": "data/ops/arts/Glaucus.png",
+        "rarity": "5"
+    },
+    "Gracebearer": {
+        "art": "data/ops/arts/Gracebearer.png",
+        "rarity": "5"
+    },
+    "Grain Buds": {
+        "art": "data/ops/arts/Grain Buds.png",
+        "rarity": "5"
+    },
+    "GreyThroat": {
+        "art": "data/ops/arts/GreyThroat.png",
+        "rarity": "5"
+    },
+    "Greyy the Lightningbearer": {
+        "art": "data/ops/arts/Greyy the Lightningbearer.png",
+        "rarity": "5"
+    },
+    "Harmonie": {
+        "art": "data/ops/arts/Harmonie.png",
+        "rarity": "5"
+    },
+    "Hibiscus the Purifier": {
+        "art": "data/ops/arts/Hibiscus the Purifier.png",
+        "rarity": "5"
+    },
+    "Hung": {
+        "art": "data/ops/arts/Hung.png",
+        "rarity": "5"
+    },
+    "Iana": {
+        "art": "data/ops/arts/Iana.png",
+        "rarity": "5"
+    },
+    "Iris": {
+        "art": "data/ops/arts/Iris.png",
+        "rarity": "5"
+    },
+    "Istina": {
+        "art": "data/ops/arts/Istina.png",
+        "rarity": "5"
+    },
+    "Kafka": {
+        "art": "data/ops/arts/Kafka.png",
+        "rarity": "5"
+    },
+    "Kazemaru": {
+        "art": "data/ops/arts/Kazemaru.png",
+        "rarity": "5"
+    },
+    "Kirara": {
+        "art": "data/ops/arts/Kirara.png",
+        "rarity": "5"
+    },
+    "La Pluma": {
+        "art": "data/ops/arts/La Pluma.png",
+        "rarity": "5"
+    },
+    "Laios": {
+        "art": "data/ops/arts/Laios.png",
+        "rarity": "5"
+    },
+    "Lappland": {
+        "art": "data/ops/arts/Lappland.png",
+        "rarity": "5"
+    },
+    "Leizi": {
+        "art": "data/ops/arts/Leizi.png",
+        "rarity": "5"
+    },
+    "Leonhardt": {
+        "art": "data/ops/arts/Leonhardt.png",
+        "rarity": "5"
+    },
+    "Leto": {
+        "art": "data/ops/arts/Leto.png",
+        "rarity": "5"
+    },
+    "Liskarm": {
+        "art": "data/ops/arts/Liskarm.png",
+        "rarity": "5"
+    },
+    "Lucilla": {
+        "art": "data/ops/arts/Lucilla.png",
+        "rarity": "5"
+    },
+    "Lunacub": {
+        "art": "data/ops/arts/Lunacub.png",
+        "rarity": "5"
+    },
+    "Manticore": {
+        "art": "data/ops/arts/Manticore.png",
+        "rarity": "5"
+    },
+    "Mayer": {
+        "art": "data/ops/arts/Mayer.png",
+        "rarity": "5"
+    },
+    "Melanite": {
+        "art": "data/ops/arts/Melanite.png",
+        "rarity": "5"
+    },
+    "Meteorite": {
+        "art": "data/ops/arts/Meteorite.png",
+        "rarity": "5"
+    },
+    "Mitm": {
+        "art": "data/ops/arts/Mitm.png",
+        "rarity": "5"
+    },
+    "Mr. Nothing": {
+        "art": "data/ops/arts/Mr. Nothing.png",
+        "rarity": "5"
+    },
+    "Mulberry": {
+        "art": "data/ops/arts/Mulberry.png",
+        "rarity": "5"
+    },
+    "Nearl": {
+        "art": "data/ops/arts/Nearl.png",
+        "rarity": "5"
+    },
+    "Nightmare": {
+        "art": "data/ops/arts/Nightmare.png",
+        "rarity": "5"
+    },
+    "Nowell": {
+        "art": "data/ops/arts/Nowell.png",
+        "rarity": "5"
+    },
+    "Paprika": {
+        "art": "data/ops/arts/Paprika.png",
+        "rarity": "5"
+    },
+    "Platinum": {
+        "art": "data/ops/arts/Platinum.png",
+        "rarity": "5"
+    },
+    "Poncirus": {
+        "art": "data/ops/arts/Poncirus.png",
+        "rarity": "5"
+    },
+    "Pramanix": {
+        "art": "data/ops/arts/Pramanix.png",
+        "rarity": "5"
+    },
+    "Projekt Red": {
+        "art": "data/ops/arts/Projekt Red.png",
+        "rarity": "5"
+    },
+    "Provence": {
+        "art": "data/ops/arts/Provence.png",
+        "rarity": "5"
+    },
+    "Proviso": {
+        "art": "data/ops/arts/Proviso.png",
+        "rarity": "5"
+    },
+    "Ptilopsis": {
+        "art": "data/ops/arts/Ptilopsis.png",
+        "rarity": "5"
+    },
+    "Quercus": {
+        "art": "data/ops/arts/Quercus.png",
+        "rarity": "5"
+    },
+    "Rathalos S Noir Corne": {
+        "art": "data/ops/arts/Rathalos S Noir Corne.png",
+        "rarity": "5"
+    },
+    "Record_Keeper": {
+        "art": "data/ops/arts/Record_Keeper.png",
+        "rarity": "5"
+    },
+    "Reed": {
+        "art": "data/ops/arts/Reed.png",
+        "rarity": "5"
+    },
+    "Rockrock": {
+        "art": "data/ops/arts/Rockrock.png",
+        "rarity": "5"
+    },
+    "Sand Reckoner": {
+        "art": "data/ops/arts/Sand Reckoner.png",
+        "rarity": "5"
+    },
+    "Santalla": {
+        "art": "data/ops/arts/Santalla.png",
+        "rarity": "5"
+    },
+    "Sesa": {
+        "art": "data/ops/arts/Sesa.png",
+        "rarity": "5"
+    },
+    "Shamare": {
+        "art": "data/ops/arts/Shamare.png",
+        "rarity": "5"
+    },
+    "Silence": {
+        "art": "data/ops/arts/Silence.png",
+        "rarity": "5"
+    },
+    "Skyfire": {
+        "art": "data/ops/arts/Skyfire.png",
+        "rarity": "5"
+    },
+    "Sora": {
+        "art": "data/ops/arts/Sora.png",
+        "rarity": "5"
+    },
+    "Specter": {
+        "art": "data/ops/arts/Specter.png",
+        "rarity": "5"
+    },
+    "Spuria": {
+        "art": "data/ops/arts/Spuria.png",
+        "rarity": "5"
+    },
+    "Surfer": {
+        "art": "data/ops/arts/Surfer.png",
+        "rarity": "5"
+    },
+    "Swire": {
+        "art": "data/ops/arts/Swire.png",
+        "rarity": "5"
+    },
+    "Tecno": {
+        "art": "data/ops/arts/Tecno.png",
+        "rarity": "5"
+    },
+    "Texas": {
+        "art": "data/ops/arts/Texas.png",
+        "rarity": "5"
+    },
+    "Tippi": {
+        "art": "data/ops/arts/Tippi.png",
+        "rarity": "5"
+    },
+    "Toddifons": {
+        "art": "data/ops/arts/Toddifons.png",
+        "rarity": "5"
+    },
+    "Tsukinogi": {
+        "art": "data/ops/arts/Tsukinogi.png",
+        "rarity": "5"
+    },
+    "Vendela": {
+        "art": "data/ops/arts/Vendela.png",
+        "rarity": "5"
+    },
+    "Waai Fu": {
+        "art": "data/ops/arts/Waai Fu.png",
+        "rarity": "5"
+    },
+    "Warfarin": {
+        "art": "data/ops/arts/Warfarin.png",
+        "rarity": "5"
+    },
+    "Warmy": {
+        "art": "data/ops/arts/Warmy.png",
+        "rarity": "5"
+    },
+    "Whisperain": {
+        "art": "data/ops/arts/Whisperain.png",
+        "rarity": "5"
+    },
+    "Wind Chimes": {
+        "art": "data/ops/arts/Wind Chimes.png",
+        "rarity": "5"
+    },
+    "Windflit": {
+        "art": "data/ops/arts/Windflit.png",
+        "rarity": "5"
+    },
+    "Wulfenite": {
+        "art": "data/ops/arts/Wulfenite.png",
+        "rarity": "5"
+    },
+    "Zima": {
+        "art": "data/ops/arts/Zima.png",
+        "rarity": "5"
+    },
+    "Aak": {
+        "art": "data/ops/arts/Aak.png",
+        "rarity": "6"
+    },
+    "Angelina": {
+        "art": "data/ops/arts/Angelina.png",
+        "rarity": "6"
+    },
+    "Archetto": {
+        "art": "data/ops/arts/Archetto.png",
+        "rarity": "6"
+    },
+    "Ascalon": {
+        "art": "data/ops/arts/Ascalon.png",
+        "rarity": "6"
+    },
+    "Ash": {
+        "art": "data/ops/arts/Ash.png",
+        "rarity": "6"
+    },
+    "Bagpipe": {
+        "art": "data/ops/arts/Bagpipe.png",
+        "rarity": "6"
+    },
+    "Blaze the Igniting Spark": {
+        "art": "data/ops/arts/Blaze the Igniting Spark.png",
+        "rarity": "6"
+    },
+    "Blaze": {
+        "art": "data/ops/arts/Blaze.png",
+        "rarity": "6"
+    },
+    "Blemishine": {
+        "art": "data/ops/arts/Blemishine.png",
+        "rarity": "6"
+    },
+    "Carnelian": {
+        "art": "data/ops/arts/Carnelian.png",
+        "rarity": "6"
+    },
+    "Ceobe": {
+        "art": "data/ops/arts/Ceobe.png",
+        "rarity": "6"
+    },
+    "Ch'en the Holungday": {
+        "art": "data/ops/arts/Ch'en the Holungday.png",
+        "rarity": "6"
+    },
+    "Ch'en": {
+        "art": "data/ops/arts/Ch'en.png",
+        "rarity": "6"
+    },
+    "Chongyue": {
+        "art": "data/ops/arts/Chongyue.png",
+        "rarity": "6"
+    },
+    "Degenbrecher": {
+        "art": "data/ops/arts/Degenbrecher.png",
+        "rarity": "6"
+    },
+    "Dorothy": {
+        "art": "data/ops/arts/Dorothy.png",
+        "rarity": "6"
+    },
+    "Dusk": {
+        "art": "data/ops/arts/Dusk.png",
+        "rarity": "6"
+    },
+    "Ebenholz": {
+        "art": "data/ops/arts/Ebenholz.png",
+        "rarity": "6"
+    },
+    "Ela": {
+        "art": "data/ops/arts/Ela.png",
+        "rarity": "6"
+    },
+    "Entelechia": {
+        "art": "data/ops/arts/Entelechia.png",
+        "rarity": "6"
+    },
+    "Eunectes": {
+        "art": "data/ops/arts/Eunectes.png",
+        "rarity": "6"
+    },
+    "Executor the Ex Foedere": {
+        "art": "data/ops/arts/Executor the Ex Foedere.png",
+        "rarity": "6"
+    },
+    "Exusiai the New Covenant": {
+        "art": "data/ops/arts/Exusiai the New Covenant.png",
+        "rarity": "6"
+    },
+    "Exusiai": {
+        "art": "data/ops/arts/Exusiai.png",
+        "rarity": "6"
+    },
+    "Eyjafjalla the Hvít Aska": {
+        "art": "data/ops/arts/Eyjafjalla the Hvít Aska.png",
+        "rarity": "6"
+    },
+    "Eyjafjalla": {
+        "art": "data/ops/arts/Eyjafjalla.png",
+        "rarity": "6"
+    },
+    "Fartooth": {
+        "art": "data/ops/arts/Fartooth.png",
+        "rarity": "6"
+    },
+    "Fiammetta": {
+        "art": "data/ops/arts/Fiammetta.png",
+        "rarity": "6"
+    },
+    "Flametail": {
+        "art": "data/ops/arts/Flametail.png",
+        "rarity": "6"
+    },
+    "Gavial the Invincible": {
+        "art": "data/ops/arts/Gavial the Invincible.png",
+        "rarity": "6"
+    },
+    "Gnosis": {
+        "art": "data/ops/arts/Gnosis.png",
+        "rarity": "6"
+    },
+    "Goldenglow": {
+        "art": "data/ops/arts/Goldenglow.png",
+        "rarity": "6"
+    },
+    "Hellagur": {
+        "art": "data/ops/arts/Hellagur.png",
+        "rarity": "6"
+    },
+    "Ho'olheyak": {
+        "art": "data/ops/arts/Ho'olheyak.png",
+        "rarity": "6"
+    },
+    "Hoederer": {
+        "art": "data/ops/arts/Hoederer.png",
+        "rarity": "6"
+    },
+    "Horn": {
+        "art": "data/ops/arts/Horn.png",
+        "rarity": "6"
+    },
+    "Hoshiguma": {
+        "art": "data/ops/arts/Hoshiguma.png",
+        "rarity": "6"
+    },
+    "Ifrit": {
+        "art": "data/ops/arts/Ifrit.png",
+        "rarity": "6"
+    },
+    "Ines": {
+        "art": "data/ops/arts/Ines.png",
+        "rarity": "6"
+    },
+    "Irene": {
+        "art": "data/ops/arts/Irene.png",
+        "rarity": "6"
+    },
+    "Jessica the Liberated": {
+        "art": "data/ops/arts/Jessica the Liberated.png",
+        "rarity": "6"
+    },
+    "Kal'tsit": {
+        "art": "data/ops/arts/Kal'tsit.png",
+        "rarity": "6"
+    },
+    "Kirin R Yato": {
+        "art": "data/ops/arts/Kirin R Yato.png",
+        "rarity": "6"
+    },
+    "Lappland the Decadenza": {
+        "art": "data/ops/arts/Lappland the Decadenza.png",
+        "rarity": "6"
+    },
+    "Lee": {
+        "art": "data/ops/arts/Lee.png",
+        "rarity": "6"
+    },
+    "Leizi the Thunderbringer": {
+        "art": "data/ops/arts/Leizi the Thunderbringer.png",
+        "rarity": "6"
+    },
+    "Lemuen": {
+        "art": "data/ops/arts/Lemuen.png",
+        "rarity": "6"
+    },
+    "Lin": {
+        "art": "data/ops/arts/Lin.png",
+        "rarity": "6"
+    },
+    "Ling": {
+        "art": "data/ops/arts/Ling.png",
+        "rarity": "6"
+    },
+    "Logos": {
+        "art": "data/ops/arts/Logos.png",
+        "rarity": "6"
+    },
+    "Magallan": {
+        "art": "data/ops/arts/Magallan.png",
+        "rarity": "6"
+    },
+    "Marcille": {
+        "art": "data/ops/arts/Marcille.png",
+        "rarity": "6"
+    },
+    "Mizuki": {
+        "art": "data/ops/arts/Mizuki.png",
+        "rarity": "6"
+    },
+    "Mon3tr": {
+        "art": "data/ops/arts/Mon3tr.png",
+        "rarity": "6"
+    },
+    "Mostima": {
+        "art": "data/ops/arts/Mostima.png",
+        "rarity": "6"
+    },
+    "Mountain": {
+        "art": "data/ops/arts/Mountain.png",
+        "rarity": "6"
+    },
+    "Mudrock": {
+        "art": "data/ops/arts/Mudrock.png",
+        "rarity": "6"
+    },
+    "Muelsyse": {
+        "art": "data/ops/arts/Muelsyse.png",
+        "rarity": "6"
+    },
+    "Młynar": {
+        "art": "data/ops/arts/Młynar.png",
+        "rarity": "6"
+    },
+    "Narantuya": {
+        "art": "data/ops/arts/Narantuya.png",
+        "rarity": "6"
+    },
+    "Nearl the Radiant Knight": {
+        "art": "data/ops/arts/Nearl the Radiant Knight.png",
+        "rarity": "6"
+    },
+    "Necrass": {
+        "art": "data/ops/arts/Necrass.png",
+        "rarity": "6"
+    },
+    "Nian": {
+        "art": "data/ops/arts/Nian.png",
+        "rarity": "6"
+    },
+    "Nightingale": {
+        "art": "data/ops/arts/Nightingale.png",
+        "rarity": "6"
+    },
+    "Nymph": {
+        "art": "data/ops/arts/Nymph.png",
+        "rarity": "6"
+    },
+    "Pallas": {
+        "art": "data/ops/arts/Pallas.png",
+        "rarity": "6"
+    },
+    "Passenger": {
+        "art": "data/ops/arts/Passenger.png",
+        "rarity": "6"
+    },
+    "Penance": {
+        "art": "data/ops/arts/Penance.png",
+        "rarity": "6"
+    },
+    "Pepe": {
+        "art": "data/ops/arts/Pepe.png",
+        "rarity": "6"
+    },
+    "Phantom": {
+        "art": "data/ops/arts/Phantom.png",
+        "rarity": "6"
+    },
+    "Pozëmka": {
+        "art": "data/ops/arts/Pozëmka.png",
+        "rarity": "6"
+    },
+    "Qiubai": {
+        "art": "data/ops/arts/Qiubai.png",
+        "rarity": "6"
+    },
+    "Ray": {
+        "art": "data/ops/arts/Ray.png",
+        "rarity": "6"
+    },
+    "Reed the Flame Shadow": {
+        "art": "data/ops/arts/Reed the Flame Shadow.png",
+        "rarity": "6"
+    },
+    "Rosa": {
+        "art": "data/ops/arts/Rosa.png",
+        "rarity": "6"
+    },
+    "Rosmontis": {
+        "art": "data/ops/arts/Rosmontis.png",
+        "rarity": "6"
+    },
+    "Saga": {
+        "art": "data/ops/arts/Saga.png",
+        "rarity": "6"
+    },
+    "Saileach": {
+        "art": "data/ops/arts/Saileach.png",
+        "rarity": "6"
+    },
+    "Saria": {
+        "art": "data/ops/arts/Saria.png",
+        "rarity": "6"
+    },
+    "Schwarz": {
+        "art": "data/ops/arts/Schwarz.png",
+        "rarity": "6"
+    },
+    "Shining": {
+        "art": "data/ops/arts/Shining.png",
+        "rarity": "6"
+    },
+    "Shu": {
+        "art": "data/ops/arts/Shu.png",
+        "rarity": "6"
+    },
+    "Siege": {
+        "art": "data/ops/arts/Siege.png",
+        "rarity": "6"
+    },
+    "SilverAsh": {
+        "art": "data/ops/arts/SilverAsh.png",
+        "rarity": "6"
+    },
+    "Skadi the Corrupting Heart": {
+        "art": "data/ops/arts/Skadi the Corrupting Heart.png",
+        "rarity": "6"
+    },
+    "Skadi": {
+        "art": "data/ops/arts/Skadi.png",
+        "rarity": "6"
+    },
+    "Specter the Unchained": {
+        "art": "data/ops/arts/Specter the Unchained.png",
+        "rarity": "6"
+    },
+    "Stainless": {
+        "art": "data/ops/arts/Stainless.png",
+        "rarity": "6"
+    },
+    "Surtr": {
+        "art": "data/ops/arts/Surtr.png",
+        "rarity": "6"
+    },
+    "Suzuran": {
+        "art": "data/ops/arts/Suzuran.png",
+        "rarity": "6"
+    },
+    "Swire the Elegant Wit": {
+        "art": "data/ops/arts/Swire the Elegant Wit.png",
+        "rarity": "6"
+    },
+    "Texas the Omertosa": {
+        "art": "data/ops/arts/Texas the Omertosa.png",
+        "rarity": "6"
+    },
+    "Thorns the Lodestar": {
+        "art": "data/ops/arts/Thorns the Lodestar.png",
+        "rarity": "6"
+    },
+    "Thorns": {
+        "art": "data/ops/arts/Thorns.png",
+        "rarity": "6"
+    },
+    "Tragodia": {
+        "art": "data/ops/arts/Tragodia.png",
+        "rarity": "6"
+    },
+    "Typhon": {
+        "art": "data/ops/arts/Typhon.png",
+        "rarity": "6"
+    },
+    "Ulpianus": {
+        "art": "data/ops/arts/Ulpianus.png",
+        "rarity": "6"
+    },
+    "Vina Victoria": {
+        "art": "data/ops/arts/Vina Victoria.png",
+        "rarity": "6"
+    },
+    "Virtuosa": {
+        "art": "data/ops/arts/Virtuosa.png",
+        "rarity": "6"
+    },
+    "Viviana": {
+        "art": "data/ops/arts/Viviana.png",
+        "rarity": "6"
+    },
+    "Vulpisfoglia": {
+        "art": "data/ops/arts/Vulpisfoglia.png",
+        "rarity": "6"
+    },
+    "W": {
+        "art": "data/ops/arts/W.png",
+        "rarity": "6"
+    },
+    "Weedy": {
+        "art": "data/ops/arts/Weedy.png",
+        "rarity": "6"
+    },
+    "Wiš'adel": {
+        "art": "data/ops/arts/Wiš'adel.png",
+        "rarity": "6"
+    },
+    "Yu": {
+        "art": "data/ops/arts/Yu.png",
+        "rarity": "6"
+    },
+    "Zuo Le": {
+        "art": "data/ops/arts/Zuo Le.png",
+        "rarity": "6"
+    }
+}
