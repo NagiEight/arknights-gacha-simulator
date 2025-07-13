@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import BannerCard from '../components/BannerCard.jsx';
-import bannerDB from "../bannersDB.json";
+import bannerDB from "../mergedDB.json";
 
 function Bannerpage() {
     const [banners, setBanners] = useState([]);
