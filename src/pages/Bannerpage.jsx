@@ -24,7 +24,7 @@ function Bannerpage() {
                     <BannerCard 
                     key={id}
                     bannerID={id}
-                    bannerName={data.name}
+                    bannerName={data. name}
                     bannerArtPath={`/${data.art.replace("#", "%23")}`}
                     date={getRandomDate()}
                     />
