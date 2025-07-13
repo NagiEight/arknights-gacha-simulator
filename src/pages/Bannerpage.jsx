@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import BannerCard from '../components/BannerCard.jsx';
+import BannersDisplay from './BannerDisplay.jsx';
 import bannerDB from "../bannersDB.json";
 
 function Bannerpage() {
