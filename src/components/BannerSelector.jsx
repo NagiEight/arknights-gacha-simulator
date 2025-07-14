@@ -3,7 +3,7 @@ import BannerCard from './BannerCard';
 import bannersDB from '../bannersDB.json'; // Adjust path if needed
 
 
-const BannerSelectingSection = () => {
+const BannerSelector = () => {
 
     const scrollRef = useRef(null);
 
@@ -62,4 +62,4 @@ const BannerSelectingSection = () => {
     );
 };
 
-export default BannerSelectingSection;
+export default BannerSelector;
